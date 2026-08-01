@@ -93,3 +93,32 @@ export function verifyPublicPackDirectory(input: string): ResolvedTransitPublicP
     sources: lines("public_sources.jsonl"),
   });
 }
+
+export function verifyResolvedTransitPackDirectory(input: string): ResolvedTransitPublicPack {
+  const pack = verifyPublicPackDirectory(join(input, "public"));
+  const manifestPath = join(input, "manifest.json");
+  const value = JSON.parse(readFileSync(manifestPath, "utf8")) as Record<string, unknown>;
+  const keys = [
+    "as_of_date", "contract_id", "operator_role", "public_fingerprint", "public_resource_count",
+    "public_role", "schema_version",
+  ].sort();
+  if (!value || typeof value !== "object" || Array.isArray(value) ||
+      JSON.stringify(Object.keys(value).sort()) !== JSON.stringify(keys)) {
+    throw new Error("resolved pack envelope has invalid exact fields");
+  }
+  const publicFiles = readdirSync(join(input, "public"), { withFileTypes: true }).map((entry) => {
+    if (!entry.isFile()) throw new Error(`resolved pack public resource is not a file: ${entry.name}`);
+    return entry.name;
+  }).sort();
+  const fingerprint = createHash("sha256").update(publicFiles
+    .map((name) => `${name}\0${readFileSync(join(input, "public", name), "utf8")}`).join("\n"))
+    .digest("hex");
+  if (value.schema_version !== 1 || value.contract_id !== "resolved-transit-knowledge-pack-v1" ||
+      value.as_of_date !== pack.manifest.as_of_date || value.public_fingerprint !== fingerprint ||
+      value.public_resource_count !== publicFiles.length ||
+      value.operator_role !== "complete_resolved_audit_contract" ||
+      value.public_role !== "consumer_safe_product_contract") {
+    throw new Error("resolved pack envelope metadata or public fingerprint drifted");
+  }
+  return pack;
+}

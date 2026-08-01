@@ -1,5 +1,6 @@
 import { describe, expect, it } from "bun:test";
-import { readFileSync } from "node:fs";
+import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { repoRoot } from "@mta-wiki/core/paths";
 import {
@@ -10,8 +11,12 @@ import {
 import {
   buildResolvedTransitPublicPack,
 } from "@mta-wiki/pipeline/materialize/resolved-transit-public";
-import { publicPackContents } from "@mta-wiki/pipeline/materialize/resolved-transit-pack";
-import { verifyPublicPackDirectory } from "@mta-wiki/pipeline/materialize/resolved-transit-pack";
+import {
+  publicPackContents,
+  verifyPublicPackDirectory,
+  verifyResolvedTransitPackDirectory,
+  writeResolvedTransitPack,
+} from "@mta-wiki/pipeline/materialize/resolved-transit-pack";
 
 function jsonl(path: string): Array<Record<string, any>> {
   const text = readFileSync(path, "utf8").trim();
@@ -137,5 +142,21 @@ describe("resolved transit knowledge pack", () => {
     expect(second).toEqual(first);
     const bytes = Object.values(first).join("\n");
     expect(bytes).not.toMatch(/(?:record_id|application:|placement:|reviewer|decision_id|source_path)/u);
+  });
+
+  it("recomputes and rejects a mutated outer public-resource fingerprint", () => {
+    const temp = mkdtempSync(join(tmpdir(), "resolved-pack-envelope-"));
+    const output = join(temp, "pack");
+    try {
+      writeResolvedTransitPack(output, "2026-07-27");
+      expect(() => verifyResolvedTransitPackDirectory(output)).not.toThrow();
+      const manifestPath = join(output, "manifest.json");
+      const manifest = JSON.parse(readFileSync(manifestPath, "utf8")) as Record<string, unknown>;
+      manifest.public_fingerprint = "0".repeat(64);
+      writeFileSync(manifestPath, `${JSON.stringify(manifest)}\n`);
+      expect(() => verifyResolvedTransitPackDirectory(output)).toThrow(/fingerprint/u);
+    } finally {
+      rmSync(temp, { recursive: true, force: true });
+    }
   });
 });

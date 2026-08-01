@@ -32,11 +32,52 @@ function json(root: string, path: string): Record<string, any> {
   return JSON.parse(readFileSync(join(root, path), "utf8")) as Record<string, any>;
 }
 
+function exactCountSum(value: unknown): number | null {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return null;
+  const counts = Object.values(value as Record<string, unknown>);
+  return counts.every((count) => Number.isInteger(count) && (count as number) >= 0)
+    ? (counts as number[]).reduce((sum, count) => sum + count, 0)
+    : null;
+}
+
+export function isEpisodeFrontierComplete(
+  frontier: Record<string, any>,
+  interventions: Record<string, any>,
+): boolean {
+  const candidateDispositions = frontier.counts_by_candidate_disposition;
+  const observationDispositions = frontier.counts_by_observation_disposition;
+  return frontier.schema_version === 1 &&
+    frontier.completeness_profile === "complete" &&
+    frontier.pending_count === 0 &&
+    frontier.invalid_count === 0 &&
+    candidateDispositions?.pending_review === 0 &&
+    candidateDispositions?.invalid === 0 &&
+    observationDispositions?.pending_segmentation === 0 &&
+    observationDispositions?.invalid_record === 0 &&
+    frontier.unresolved_active_identity_ids === 0 &&
+    frontier.pending_review_distinct_unresolved_identity_ids === 0 &&
+    frontier.zero_unexplained_loss === true &&
+    frontier.cohort_observations === 1366 &&
+    frontier.observation_ledger_rows === frontier.cohort_observations &&
+    frontier.candidate_bearing_observations + frontier.non_candidate_observations ===
+      frontier.cohort_observations &&
+    exactCountSum(observationDispositions) === frontier.cohort_observations &&
+    frontier.candidate_ledger_rows === 766 &&
+    frontier.adapter_candidate_count === frontier.candidate_ledger_rows &&
+    exactCountSum(candidateDispositions) === frontier.candidate_ledger_rows &&
+    frontier.publishable_reviewed_occurrence_ids === 157 &&
+    frontier.published_distinct_occurrence_ids === frontier.publishable_reviewed_occurrence_ids &&
+    candidateDispositions?.published === frontier.publishable_reviewed_occurrence_ids &&
+    interventions.episode_count === frontier.publishable_reviewed_occurrence_ids &&
+    interventions.published_candidate_count === interventions.episode_count;
+}
+
 export function collectProductionGateEvidence(
   root: string,
   asOfDate: string,
   options: { strictPublicContractComplete: boolean; independentRecutVerified: boolean },
 ): ProductionGateEvidence {
+  const episodeFrontier = json(root, "data/quality/operational-episode-frontier/v1/summary.json");
   const interventions = json(root, "data/resolved-transit/operator/v1/interventions/summary.json");
   const applicationReceipt = json(root, "data/operational-application-semantics/campaigns/plan-053/accepted/integration-receipt.json");
   const applicationCompletion = json(root, "data/operational-application-semantics/campaigns/plan-053/accepted/completion-receipt.json");
@@ -48,10 +89,9 @@ export function collectProductionGateEvidence(
   const tracker = json(root, "data/resolved-transit/operator/v1/tracker-conformance/summary.json");
   return {
     episode_frontier_complete:
+      isEpisodeFrontierComplete(episodeFrontier, interventions) &&
       interventions.pending_identity_candidate_count === 0 &&
-      interventions.episode_count === 157 &&
       interventions.application_count === 343 &&
-      interventions.published_candidate_count === interventions.episode_count &&
       interventions.zero_unexplained_identity_loss === true,
     application_semantics_complete:
       applicationReceipt.current_application_count === interventions.application_count &&

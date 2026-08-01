@@ -1,7 +1,9 @@
 import { describe, expect, it } from "bun:test";
-import { resolve } from "node:path";
+import { readFileSync } from "node:fs";
+import { join, resolve } from "node:path";
 import {
   collectProductionGateEvidence,
+  isEpisodeFrontierComplete,
   productionIneligibilityReasons,
 } from "../../src/materialize/release-production-eligibility.js";
 
@@ -59,5 +61,30 @@ describe("resolved-pack production eligibility", () => {
       "tracker_conformance_incomplete",
       "semantic_input_receipts_incomplete",
     ]);
+  });
+
+  it("fails the source frontier gate when Plan 052 terminal arithmetic drifts", () => {
+    const frontier = JSON.parse(readFileSync(
+      join(repoRoot, "data/quality/operational-episode-frontier/v1/summary.json"),
+      "utf8",
+    )) as Record<string, any>;
+    const interventions = JSON.parse(readFileSync(
+      join(repoRoot, "data/resolved-transit/operator/v1/interventions/summary.json"),
+      "utf8",
+    )) as Record<string, any>;
+    expect(isEpisodeFrontierComplete(frontier, interventions)).toBe(true);
+    for (const mutate of [
+      (copy: Record<string, any>) => { copy.completeness_profile = "partial"; },
+      (copy: Record<string, any>) => { copy.pending_count = 1; },
+      (copy: Record<string, any>) => { copy.counts_by_candidate_disposition.pending_review = 1; },
+      (copy: Record<string, any>) => { copy.counts_by_observation_disposition.pending_segmentation = 1; },
+      (copy: Record<string, any>) => { copy.publishable_reviewed_occurrence_ids = 156; },
+      (copy: Record<string, any>) => { copy.observation_ledger_rows = 1365; },
+      (copy: Record<string, any>) => { copy.unresolved_active_identity_ids = 1; },
+    ]) {
+      const copy = structuredClone(frontier);
+      mutate(copy);
+      expect(isEpisodeFrontierComplete(copy, interventions)).toBe(false);
+    }
   });
 });

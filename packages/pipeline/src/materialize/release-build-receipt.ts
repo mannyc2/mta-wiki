@@ -136,17 +136,18 @@ export function buildReleaseReceipt(input: {
   outputResources: Record<string, ReleaseManifestFile>;
   productionGateEvidence: ProductionGateEvidence;
 }): ProductionReleaseBuildReceipt {
+  const semanticInputs = [...input.semanticInputs].sort((a, b) => a.path.localeCompare(b.path));
   const verificationReasons: string[] = [];
   if (input.trackedDirty) verificationReasons.push("tracked_worktree_dirty");
-  if (input.semanticInputs.some((entry) => !entry.tracked)) verificationReasons.push("untracked_semantic_input");
+  if (semanticInputs.some((entry) => !entry.tracked)) verificationReasons.push("untracked_semantic_input");
   const productionReasons = productionIneligibilityReasons({
     profile: input.profile,
     publishCheck: input.publishCheck,
     trackedDirty: input.trackedDirty,
-    semanticInputsReceipted: semanticInputsCoverProductionReceipts(input.semanticInputs),
+    semanticInputsReceipted: semanticInputsCoverProductionReceipts(semanticInputs),
     evidence: input.productionGateEvidence,
   });
-  const { semanticInputDigest, codeConfigInputDigest } = digests(input.semanticInputs, input.codeConfigPaths);
+  const { semanticInputDigest, codeConfigInputDigest } = digests(semanticInputs, input.codeConfigPaths);
   const productionEligible = productionReasons.length === 0;
   const productionContentEligible = productionReasons
     .filter((reason) => reason !== "independent_recut_not_verified").length === 0;
@@ -157,7 +158,7 @@ export function buildReleaseReceipt(input: {
     tracked_dirty: input.trackedDirty,
     runtime: { bun: process.versions.bun ?? "unknown", node: process.version },
     export_options: { profile: input.profile, as_of_date: input.asOfDate, publish_check: input.publishCheck },
-    semantic_inputs: input.semanticInputs,
+    semantic_inputs: semanticInputs,
     semantic_input_digest: semanticInputDigest,
     code_config_paths: [...input.codeConfigPaths].sort(),
     code_config_input_digest: codeConfigInputDigest,
@@ -227,6 +228,10 @@ export function parseReleaseBuildReceipt(value: unknown): ReleaseBuildReceipt {
   if (!["resolved-pack-v1-verification", "resolved-pack-v1-production"].includes(receipt.export_options.profile)) {
     throw new Error("build receipt: invalid export profile");
   }
+  if (Number.isNaN(Date.parse(`${receipt.export_options.as_of_date}T00:00:00Z`)) ||
+      new Date(`${receipt.export_options.as_of_date}T00:00:00Z`).toISOString().slice(0, 10) !== receipt.export_options.as_of_date) {
+    throw new Error("build receipt: invalid calendar as-of date");
+  }
   if (!Array.isArray(receipt.semantic_inputs) || !Array.isArray(receipt.code_config_paths) ||
       !Array.isArray(receipt.verification_candidate_ineligibility_reasons) ||
       !Array.isArray(receipt.production_ineligibility_reasons) ||
@@ -242,7 +247,9 @@ export function parseReleaseBuildReceipt(value: unknown): ReleaseBuildReceipt {
       throw new Error(`build receipt: invalid semantic input ${index}`);
     }
   }
-  if (new Set(receipt.semantic_inputs.map((entry) => entry.path)).size !== receipt.semantic_inputs.length ||
+  const semanticPaths = receipt.semantic_inputs.map((entry) => entry.path);
+  if (new Set(semanticPaths).size !== receipt.semantic_inputs.length ||
+      JSON.stringify([...semanticPaths].sort()) !== JSON.stringify(semanticPaths) ||
       receipt.code_config_paths.some((path) => typeof path !== "string") ||
       new Set(receipt.code_config_paths).size !== receipt.code_config_paths.length ||
       JSON.stringify([...receipt.code_config_paths].sort()) !== JSON.stringify(receipt.code_config_paths)) {

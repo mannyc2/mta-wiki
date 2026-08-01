@@ -43,7 +43,7 @@ const metadata = (path: string): ReleaseManifestFile => {
 };
 
 function git(root: string, args: string[]): string {
-  const result = spawnSync("git", args, { cwd: root, encoding: "utf8" });
+  const result = spawnSync("git", args, { cwd: root, encoding: "utf8", maxBuffer: 128 * 1024 * 1024 });
   if (result.status !== 0) throw new Error(`git ${args.join(" ")} failed: ${(result.stderr || result.stdout).trim()}`);
   return result.stdout.trim();
 }

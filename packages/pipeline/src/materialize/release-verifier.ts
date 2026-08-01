@@ -85,10 +85,11 @@ import {
 import type { MemberExtentRow } from "../quality/study-readiness-v1.js";
 import { parseReleaseBuildReceipt, productionReleaseInputPathspecs } from "./release-build-receipt.js";
 import { runResolvedPackReferenceAdapter } from "../consumer/reference-adapter.js";
-import { verifyPublicPackDirectory } from "./resolved-transit-pack.js";
+import { publicPackContents, verifyResolvedTransitPackDirectory } from "./resolved-transit-pack.js";
 import { assertPublicSafe } from "../consumer/public-contract.js";
 import { validateTrackerConformance } from "./tracker-conformance.js";
 import { collectProductionGateEvidence } from "./release-production-eligibility.js";
+import { buildResolvedTransitPublicPack } from "./resolved-transit-public.js";
 
 const verifiedReleaseBrand: unique symbol = Symbol("VerifiedReleaseBundle");
 export type ReleaseVerificationResult = {
@@ -1347,6 +1348,7 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
       ], {
         cwd: options.sourceRootDir,
         encoding: "utf8",
+        maxBuffer: 128 * 1024 * 1024,
       });
       if (trackedResult.status !== 0) throw new Error("manifest-v7 could not verify tracked semantic inputs");
       const tree = new Map(trackedResult.stdout.split("\n").filter(Boolean).map((line) => {
@@ -1383,6 +1385,13 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
         const source = join(options.sourceRootDir, "data/resolved-transit/operator/v1", path.slice("resolved-pack/operator/".length));
         if (!existsSync(source) || !readFileSync(source).equals(bytes)) {
           throw new Error(`manifest-v7 released operator resource differs from its receipted input: ${path}`);
+        }
+      }
+      for (const filename of FILE_BY_KIND.values()) {
+        const output = files.get(filename);
+        const source = readFileSync(join(options.sourceRootDir, "data/canonical", filename));
+        if (!output || !source.equals(output)) {
+          throw new Error(`manifest-v7 canonical output differs from its commit-bound input: ${filename}`);
         }
       }
       const expectedEvidence = collectProductionGateEvidence(options.sourceRootDir, manifest.as_of_date, {
@@ -1424,7 +1433,7 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
       productionEligible = receipt.production_eligible;
       productionIneligibilityReasons = [...receipt.production_ineligibility_reasons];
       const publicRoot = join(releaseDir, "resolved-pack", "public");
-      const publicPack = verifyPublicPackDirectory(publicRoot);
+      const publicPack = verifyResolvedTransitPackDirectory(join(releaseDir, "resolved-pack"));
       assertPublicSafe(publicPack);
       const adapter = runResolvedPackReferenceAdapter(publicRoot);
       if (adapter.episodes_by_route.length !== publicPack.routes.length) {
@@ -1432,6 +1441,13 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
       }
       if (publicPack.manifest.as_of_date !== manifest.as_of_date) {
         throw new Error("manifest-v7 public pack as-of mismatch");
+      }
+      const rebuiltPublic = publicPackContents(buildResolvedTransitPublicPack(manifest.as_of_date, options.sourceRootDir!));
+      for (const [name, expected] of Object.entries(rebuiltPublic)) {
+        const actual = files.get(`resolved-pack/public/${name}`);
+        if (!actual || actual.toString("utf8") !== expected) {
+          throw new Error(`manifest-v7 public output is not the exact commit-bound rebuild: ${name}`);
+        }
       }
       validateTrackerConformance(publicPack, releaseDir, "resolved-pack/operator/tracker-conformance");
     }

@@ -49,14 +49,27 @@ if (stableJson(treeA as unknown as JsonValue) !== stableJson(treeB as unknown as
 const receipt = parseReleaseBuildReceipt(JSON.parse(readFileSync(join(dirA, "build_receipt.json"), "utf8")) as unknown);
 if (receipt.schema_version !== 2 || !receipt.production_content_eligible || receipt.production_eligible ||
     JSON.stringify(receipt.production_ineligibility_reasons) !== JSON.stringify(["independent_recut_not_verified"]) ||
-    receipt.export_options.profile !== "resolved-pack-v1-production") {
+    receipt.export_options.profile !== "resolved-pack-v1-production" ||
+    receipt.export_options.as_of_date !== AS_OF_DATE) {
   throw new Error("production build receipt is not exact content-eligible pre-handoff state");
 }
-if (verifiedA.manifest_sha256 !== verifiedB.manifest_sha256 || verifiedA.build_id !== verifiedB.build_id) {
+if (verifiedA.manifest_sha256 !== verifiedB.manifest_sha256 || verifiedA.build_id !== verifiedB.build_id ||
+    verifiedA.as_of_date !== AS_OF_DATE || verifiedB.as_of_date !== AS_OF_DATE) {
   throw new Error("production recut verification identities differ");
 }
+const exactLegacyReasons = [
+  "production_profile_required",
+  "episode_frontier_incomplete",
+  "application_semantics_incomplete",
+  "placement_frontier_incomplete",
+  "lifecycle_coverage_incomplete",
+  "strict_public_contract_incomplete",
+  "public_display_incomplete",
+  "tracker_conformance_incomplete",
+  "semantic_input_receipts_incomplete",
+];
 if (legacy.verification_candidate_eligible !== true || legacy.production_eligible !== false ||
-    legacy.production_ineligibility_reasons.length !== 9) {
+    JSON.stringify(legacy.production_ineligibility_reasons) !== JSON.stringify(exactLegacyReasons)) {
   throw new Error("legacy partial candidate did not retain exact verification-only classification");
 }
 const latest = readFileSync(join(repoRoot, "data/exports/releases/LATEST"), "utf8").trim();
@@ -88,6 +101,7 @@ const core = {
   legacy_partial_candidate: verificationSummary(legacy),
   legacy_v1_rc28: verificationSummary(rc28),
   completion_receipts: {
+    plan_052: "data/contracts/relationships/v1/enforcement-source-refresh-receipts/2eab6a56d169953542988a7a4e7efc3d56608aa27324d8808693a8f7afe13a90.json",
     plan_053: "plan-053-completion:ad0a80ce5eb239140639d62a1f391831674a404c021e6605208f438363974a03",
     plan_054: "plan-054-completion:5ceaccde359a9980eded2c5eca86cecd660af2137f855ebe35725d8b909323ec",
     plan_055: "plan-055-completion:347736366cc08cb774290c4b96df5c2c8ae63a38ff176a7873177d6c4a051de1",

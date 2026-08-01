@@ -105,5 +105,10 @@ describe("manifest-v7 semantic envelope", () => {
     const malformed = structuredClone(receipt) as any;
     malformed.production_gate_evidence.episode_frontier_complete = "true";
     expect(() => parseReleaseBuildReceipt(malformed)).toThrow("exact booleans");
+    expect(() => parseReleaseBuildReceipt(buildReleaseReceipt({ ...base, asOfDate: "2026-02-30" })))
+      .toThrow("calendar as-of date");
+    const reordered = structuredClone(receipt);
+    reordered.semantic_inputs.reverse();
+    expect(() => parseReleaseBuildReceipt(reordered)).toThrow("duplicate or unsorted input path");
   });
 });
