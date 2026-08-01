@@ -4,6 +4,7 @@ import { readCanonicalRecords } from "./canonical-read.js";
 import {
   loadApplicationPlacementTransitions,
   validateApplicationPlacementTransitions,
+  validateApplicationPlacementTransitionManifests,
 } from "./application-placement-transitions.js";
 import {
   buildInterventionLifecycleProjection,
@@ -14,13 +15,18 @@ import {
   type InterventionPlacementFrontier,
 } from "./intervention-placement-frontier.js";
 import {
-  buildTransitionLifecycleAssertions,
+  loadAcceptedPlacementCandidateDispositions,
+  validateAcceptedPlacementCandidateDispositionManifests,
+  validatePlacementDecisionProvenance,
+} from "./intervention-placement-candidate-dispositions.js";
+import {
   loadAcceptedInterventionLifecycleAssertions,
   validateAcceptedInterventionLifecycleAssertions,
 } from "./intervention-lifecycle.js";
 import {
   loadInterventionPlacementIdentityOperations,
   replayInterventionPlacementIdentityOperations,
+  validateInterventionPlacementIdentityOperationManifests,
   type InterventionPlacementRegistryEntry,
 } from "./intervention-placements.js";
 import {
@@ -58,22 +64,36 @@ export function buildProductionInterventionPlacements(
 ): ProductionInterventionPlacementBuild {
   const records = readCanonicalRecords();
   const resolved = loadResolvedInterventions(productionResolvedInterventionDir(rootDir));
-  const operations = loadInterventionPlacementIdentityOperations(join(
+  const placementBatchesDir = join(
     rootDir,
     "data",
     "intervention-placements",
-    "accepted",
-    "identity-operations",
-  ));
-  const registry = replayInterventionPlacementIdentityOperations(operations);
-  const transitions = validateApplicationPlacementTransitions(
-    loadApplicationPlacementTransitions(join(
+    "campaigns",
+    "plan-054",
+    "batches",
+  );
+  const operations = validateInterventionPlacementIdentityOperationManifests(
+    loadInterventionPlacementIdentityOperations(join(
       rootDir,
       "data",
       "intervention-placements",
       "accepted",
-      "transitions",
+      "identity-operations",
     )),
+    placementBatchesDir,
+  );
+  const registry = replayInterventionPlacementIdentityOperations(operations);
+  const transitions = validateApplicationPlacementTransitions(
+    validateApplicationPlacementTransitionManifests(
+      loadApplicationPlacementTransitions(join(
+        rootDir,
+        "data",
+        "intervention-placements",
+        "accepted",
+        "transitions",
+      )),
+      placementBatchesDir,
+    ),
     resolved.applications,
     registry,
     new Map(resolved.episodes.map((episode) => [
@@ -81,18 +101,30 @@ export function buildProductionInterventionPlacements(
       episode.resolved_onset.date,
     ])),
   );
+  const candidateDispositions = validateAcceptedPlacementCandidateDispositionManifests(
+    loadAcceptedPlacementCandidateDispositions(join(
+      rootDir,
+      "data",
+      "intervention-placements",
+      "accepted",
+      "candidate-dispositions",
+    )),
+    placementBatchesDir,
+    resolved.applications,
+  );
   const frontier = buildInterventionPlacementFrontier({
     canonical_records: records,
     applications: resolved.applications,
     registry,
     transitions,
+    candidate_dispositions: candidateDispositions,
   });
-  const transitionAssertions = buildTransitionLifecycleAssertions({
-    transitions,
-    applications: resolved.applications,
-    episodes: resolved.episodes,
+  validatePlacementDecisionProvenance({
+    candidate_dispositions: candidateDispositions,
+    candidate_ledger: frontier.candidate_ledger,
+    identity_operations: operations,
     registry,
-    canonical_records: records,
+    transitions,
   });
   const acceptedAssertions = validateAcceptedInterventionLifecycleAssertions(
     loadAcceptedInterventionLifecycleAssertions(join(
@@ -108,15 +140,10 @@ export function buildProductionInterventionPlacements(
       canonical_records: records,
     },
   );
-  const allAssertions = [...transitionAssertions, ...acceptedAssertions]
-    .sort((a, b) => a.assertion_id.localeCompare(b.assertion_id));
-  if (new Set(allAssertions.map((row) => row.assertion_id)).size !== allAssertions.length) {
-    throw new Error("transition and independent lifecycle assertions overlap");
-  }
   const lifecycle = buildInterventionLifecycleProjection({
     placements: registry,
     transitions,
-    assertions: allAssertions,
+    assertions: acceptedAssertions,
     as_of_date: asOfDate,
   });
   const documentaryLifecycleObservations = records.flatMap((record) => {

@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "audit_id": "plan-054-primary-proposal-independent-audit",
+  "audited_path": "/tmp/plan054-primary-review.jsonl",
+  "audited_sha256": "92c71c00eca44cff49ab46a95e670f77cc5cdeb385035af7cfba170b20c29846",
+  "portfolio_path": "/home/cjpher/.codex/worktrees/471d/mta-wiki/data/intervention-placements/campaigns/plan-054/portfolio.json",
+  "portfolio_sha256": "fa276f7c9da065e3a8ea67aeb382b1bd84443630416095dfd96b871121adbdde",
+  "verdict": "APPROVE",
+  "counts": {
+    "candidates": 1773,
+    "unique_candidates": 1773,
+    "resolved_placement": 102,
+    "duplicate_alias": 2,
+    "not_a_placement": 263,
+    "ambiguous": 1406,
+    "positive_add_transitions": 104,
+    "negative_transitions": 239,
+    "establishments": 102,
+    "aliases": 2
+  },
+  "evidence_checks": {
+    "proposal_evidence_refs": 6821,
+    "unique_canonical_record_pins": 2510,
+    "unique_evidence_block_pins": 2707,
+    "positive_claims_checked": 104,
+    "nonplacement_payloads_checked": 263
+  },
+  "replayed_hashes": {
+    "cohort_sha256": "357916356880d40d682252fe321370543efe2ebd693c2f89e16cd3f2cc6a30ce",
+    "candidate_partition_sha256": "50e7343f0280fee884928742b1cc3e460cc62165642d70107b7274c3c9dca3e1",
+    "manifest_partition_sha256": "a16369cf468fa80cb1fcbfa61e8f8452d24738fda629b1de59cc193154d82b83",
+    "public_key_replay_head": "ab00ce5bcb7f9db576eab3e6152ff5f6de6b160c74cd0bf4f0c29581cf9d724d"
+  },
+  "duplicate_aliases": [
+    {
+      "candidate_id": "placement-candidate:2cdd3fab8ff5fa2d2a8b6c23",
+      "placement_id": "placement:3b6ccfa69b3d52bff8af121c",
+      "alias": "m34a-sbs-fare-collection-component-ba1de677d698b4a6a726a489",
+      "survivor_candidate_id": "placement-candidate:24c7e4112969cb65f1c856d2"
+    },
+    {
+      "candidate_id": "placement-candidate:eb3ca7d3d28345409239f48d",
+      "placement_id": "placement:63831dd6c60468c1e354642e",
+      "alias": "m34-select-bus-service-fare-collection-component-b75a8247d4f3287f2b0b87f0",
+      "survivor_candidate_id": "placement-candidate:ab7ba66f1fe501b3a2e9ba15"
+    }
+  ],
+  "notes": [
+    "All 263 not_a_placement rows are later-lifecycle events; none creates identity or transition.",
+    "Canonical payload/evidence review of the 263 non-placement rows found no exact bus route × treatment binding; transit-term matches are rail, administrative, station/facility, marketing, fare-policy, or systemwide events without placement identity.",
+    "The two duplicate aliases are bilateral M34/M34A off-board-fare pairs with matching exact route, GTFS route, family, route-wide scope, shared retained public alias, and independently pinned treatment evidence."
+  ],
+  "defects": []
+}

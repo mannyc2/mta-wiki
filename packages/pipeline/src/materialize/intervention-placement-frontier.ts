@@ -4,6 +4,11 @@ import { join } from "node:path";
 import { stableJson } from "@mta-wiki/db/stable-json";
 import type { JsonValue, MtaCanonicalRecord } from "@mta-wiki/db/types";
 import type { ApplicationPlacementTransition } from "./application-placement-transitions.js";
+import {
+  parseAcceptedPlacementCandidateDisposition,
+  placementCandidateInputFingerprint,
+  type AcceptedPlacementCandidateDisposition,
+} from "./intervention-placement-candidate-dispositions.js";
 import type { InterventionPlacementRegistryEntry } from "./intervention-placements.js";
 import type { ResolvedInterventionApplication } from "./resolved-intervention-applications.js";
 
@@ -57,9 +62,14 @@ export type PlacementCandidateRow = {
 export type PlacementTransitionReconciliation = {
   schema_version: 1;
   application_id: string;
-  disposition: "pending_review" | "nonauthorizing_unknown_action";
   reason_code: string;
-};
+} & ({
+  disposition: "pending_review" | "nonauthorizing_unknown_action";
+} | {
+  disposition: "accepted_negative_transition";
+  candidate_disposition_id: string;
+  decision_id: string;
+});
 
 export type InterventionPlacementFrontier = {
   cohort: {
@@ -73,6 +83,7 @@ export type InterventionPlacementFrontier = {
   };
   source_observation_ledger: PlacementSourceObservationRow[];
   candidate_ledger: PlacementCandidateRow[];
+  candidate_dispositions: AcceptedPlacementCandidateDisposition[];
   transition_reconciliation: PlacementTransitionReconciliation[];
   summary: {
     schema_version: 1;
@@ -165,6 +176,7 @@ export function buildInterventionPlacementFrontier(input: {
   applications: readonly ResolvedInterventionApplication[];
   registry: readonly InterventionPlacementRegistryEntry[];
   transitions: readonly ApplicationPlacementTransition[];
+  candidate_dispositions?: readonly AcceptedPlacementCandidateDisposition[];
 }): InterventionPlacementFrontier {
   const examinedRecords = input.canonical_records.filter(examined)
     .sort((a, b) => a.record_id.localeCompare(b.record_id));
@@ -250,9 +262,9 @@ export function buildInterventionPlacementFrontier(input: {
       ]),
       transition_ids: transition ? [transition.transition_id] : [],
       placement_ids: placementIds,
-      disposition: transition && placementIds.length ? "resolved_placement" : "pending_review",
+      disposition: "pending_review",
       reason_code: transition
-        ? placementIds.length ? "accepted_application_transition" : "nonauthorizing_transition"
+        ? "accepted_candidate_disposition_required"
         : application.action === "unknown"
           ? "application_action_unknown"
           : "missing_application_transition",
@@ -277,18 +289,106 @@ export function buildInterventionPlacementFrontier(input: {
   if (new Set(candidates.map((row) => row.candidate_id)).size !== candidates.length) {
     throw new Error("duplicate intervention placement candidate id");
   }
+  const candidateById = new Map(candidates.map((row) => [row.candidate_id, row]));
+  const placementIds = new Set(input.registry.map((row) => row.placement_id));
+  const transitionById = new Map(input.transitions.map((row) => [row.transition_id, row]));
+  const candidateDispositions = (input.candidate_dispositions ?? []).map((value, index) =>
+    parseAcceptedPlacementCandidateDisposition(value, `candidate disposition[${index}]`)
+  ).sort((a, b) => a.disposition_id.localeCompare(b.disposition_id));
+  if (new Set(candidateDispositions.map((row) => row.disposition_id)).size !== candidateDispositions.length ||
+      new Set(candidateDispositions.map((row) => row.candidate_id)).size !== candidateDispositions.length ||
+      new Set(candidateDispositions.map((row) => row.decision_id)).size !== candidateDispositions.length) {
+    throw new Error("accepted placement candidate dispositions must be unique per disposition, candidate, and decision");
+  }
+  for (const decision of candidateDispositions) {
+    const candidate = candidateById.get(decision.candidate_id);
+    if (!candidate) throw new Error(`${decision.disposition_id}: missing frozen candidate`);
+    if (decision.candidate_input_fingerprint !== placementCandidateInputFingerprint(candidate) ||
+        decision.application_id !== candidate.application_id) {
+      throw new Error(`${decision.disposition_id}: stale candidate binding`);
+    }
+    if (decision.placement_ids.some((id) => !placementIds.has(id))) {
+      throw new Error(`${decision.disposition_id}: unknown placement binding`);
+    }
+    if (decision.transition_ids.some((id) => !transitionById.has(id))) {
+      throw new Error(`${decision.disposition_id}: unknown transition binding`);
+    }
+    const transition = candidate.application_id
+      ? transitionsByApplication.get(candidate.application_id)
+      : undefined;
+    if (candidate.application_id !== null) {
+      if (decision.transition_disposition === "not_applicable") {
+        throw new Error(`${decision.disposition_id}: application candidate requires transition reconciliation`);
+      }
+      if (decision.transition_disposition === "accepted_transition") {
+        if (!transition) throw new Error(`${decision.disposition_id}: accepted transition is missing`);
+        if (transition.decision_id !== decision.decision_id ||
+            transition.batch_id !== decision.batch_id ||
+            transition.manifest_sha256 !== decision.manifest_sha256 ||
+            transition.primary_reviewer !== decision.primary_reviewer ||
+            transition.independent_reviewer !== decision.independent_reviewer ||
+            transition.review_outcome !== decision.review_outcome ||
+            transition.adjudicator !== decision.adjudicator ||
+            transition.integrator_id !== decision.integrator_id ||
+            transition.accepted_at !== decision.accepted_at) {
+          throw new Error(`${decision.disposition_id}: transition review receipt is inconsistent`);
+        }
+        const expectedTransitionIds = [transition.transition_id];
+        const expectedPlacementIds = sortedUnique([
+          ...transition.target_placement_ids,
+          ...transition.result_placement_ids,
+        ]);
+        if (canonical(decision.transition_ids) !== canonical(expectedTransitionIds) ||
+            canonical(decision.placement_ids) !== canonical(expectedPlacementIds) ||
+            decision.disposition !== "resolved_placement" || expectedPlacementIds.length === 0) {
+          throw new Error(`${decision.disposition_id}: positive transition disposition is inconsistent`);
+        }
+      } else if (transition || decision.transition_ids.length || decision.placement_ids.length ||
+          decision.disposition === "resolved_placement" || decision.disposition === "duplicate_alias") {
+        throw new Error(`${decision.disposition_id}: negative transition disposition must be nonauthorizing`);
+      }
+    } else {
+      if (decision.transition_disposition !== "not_applicable" || decision.transition_ids.length) {
+        throw new Error(`${decision.disposition_id}: non-application candidate cannot reconcile a transition`);
+      }
+      if ((decision.disposition === "resolved_placement" || decision.disposition === "duplicate_alias") !==
+          (decision.placement_ids.length > 0)) {
+        throw new Error(`${decision.disposition_id}: declarative placement binding is inconsistent`);
+      }
+    }
+    candidate.transition_ids = decision.transition_ids;
+    candidate.placement_ids = decision.placement_ids;
+    candidate.disposition = decision.disposition;
+    candidate.reason_code = decision.reason_code;
+  }
+  const dispositionByApplication = new Map(candidateDispositions.flatMap((row) =>
+    row.application_id === null ? [] : [[row.application_id, row] as const]
+  ));
   const transitionReconciliation = input.applications
     .filter((application) => !transitionsByApplication.has(application.application_id))
-    .map((application): PlacementTransitionReconciliation => ({
-      schema_version: 1,
-      application_id: application.application_id,
-      disposition: application.action === "unknown"
-        ? "nonauthorizing_unknown_action"
-        : "pending_review",
-      reason_code: application.action === "unknown"
-        ? "unknown_action_cannot_authorize_placement_transition"
-        : "accepted_transition_required",
-    })).sort((a, b) => a.application_id.localeCompare(b.application_id));
+    .map((application): PlacementTransitionReconciliation => {
+      const decision = dispositionByApplication.get(application.application_id);
+      if (decision?.transition_disposition === "accepted_negative_transition") {
+        return {
+          schema_version: 1,
+          application_id: application.application_id,
+          disposition: "accepted_negative_transition",
+          reason_code: decision.reason_code,
+          candidate_disposition_id: decision.disposition_id,
+          decision_id: decision.decision_id,
+        };
+      }
+      return {
+        schema_version: 1,
+        application_id: application.application_id,
+        disposition: application.action === "unknown"
+          ? "nonauthorizing_unknown_action"
+          : "pending_review",
+        reason_code: application.action === "unknown"
+          ? "unknown_action_cannot_authorize_placement_transition"
+          : "accepted_transition_required",
+      };
+    }).sort((a, b) => a.application_id.localeCompare(b.application_id));
   if (input.applications.length !== input.transitions.length + transitionReconciliation.length) {
     throw new Error("application transition reconciliation is unbalanced");
   }
@@ -330,6 +430,7 @@ export function buildInterventionPlacementFrontier(input: {
       cohort,
       source_observation_ledger: sourceLedger,
       candidate_ledger: candidates,
+      ...(candidateDispositions.length ? { candidate_dispositions: candidateDispositions } : {}),
       transition_reconciliation: transitionReconciliation,
       summary: summaryWithoutFingerprint,
     }),
@@ -343,6 +444,7 @@ export function buildInterventionPlacementFrontier(input: {
     cohort,
     source_observation_ledger: sourceLedger,
     candidate_ledger: candidates,
+    candidate_dispositions: candidateDispositions,
     transition_reconciliation: transitionReconciliation,
     summary,
   };
@@ -360,6 +462,9 @@ export function interventionPlacementFrontierContents(input: {
 }): Record<string, string> {
   return {
     "candidate_ledger.jsonl": jsonl(input.frontier.candidate_ledger),
+    ...(input.frontier.candidate_dispositions.length
+      ? { "candidate_dispositions.jsonl": jsonl(input.frontier.candidate_dispositions) }
+      : {}),
     "cohort.json": json(input.frontier.cohort),
     "registry.jsonl": jsonl(input.registry),
     "source_observation_ledger.jsonl": jsonl(input.frontier.source_observation_ledger),

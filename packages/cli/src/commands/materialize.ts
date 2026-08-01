@@ -348,15 +348,17 @@ export const materializeCommands = {
     };
     if (process.argv.includes("--check")) checkInterventionPlacementFrontier(output, projection);
     else writeInterventionPlacementFrontier(output, projection);
-    const resolved = loadResolvedInterventions(productionResolvedInterventionDir());
-    rebuildResolvedTransitDb({
-      ...resolved,
-      placements: build.registry,
-      placement_transitions: build.transitions,
-      placement_frontier: build.frontier.candidate_ledger,
-      placement_reconciliation: build.frontier.transition_reconciliation,
-      documentary_lifecycle_observations: build.documentary_lifecycle_observations,
-    });
+    if (!process.argv.includes("--check")) {
+      const resolved = loadResolvedInterventions(productionResolvedInterventionDir());
+      rebuildResolvedTransitDb({
+        ...resolved,
+        placements: build.registry,
+        placement_transitions: build.transitions,
+        placement_frontier: build.frontier.candidate_ledger,
+        placement_reconciliation: build.frontier.transition_reconciliation,
+        documentary_lifecycle_observations: build.documentary_lifecycle_observations,
+      });
+    }
     console.log(
       `${process.argv.includes("--check") ? "Verified" : "Materialized"} intervention placements: ` +
       `${build.registry.length} registry rows, ${build.transitions.length} transitions, ` +

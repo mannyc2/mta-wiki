@@ -32,7 +32,15 @@ function base(operationId: string) {
     schema_version: 1 as const,
     operation_id: operationId,
     decision_id: `decision:${operationId}`,
+    candidate_ids: [`placement-candidate:${operationId}`],
     issued_at: "2026-07-28T00:00:00Z",
+    batch_id: "identity-fixture-01",
+    manifest_sha256: "a".repeat(64),
+    primary_reviewer: "fixture-primary",
+    independent_reviewer: "fixture-independent",
+    review_outcome: "agreement" as const,
+    adjudicator: null,
+    integrator_id: "fixture-integrator",
     rationale: "Reviewed fixture operation.",
   };
 }
@@ -93,8 +101,14 @@ function transition(
     result_placement_ids: results,
     decision_id: decisionId,
     evidence_bindings: app.evidence_bindings,
-    reviewer: "fixture",
-    reviewed_at: "2026-07-28T00:00:00Z",
+    batch_id: "application-fixture-01",
+    manifest_sha256: "a".repeat(64),
+    primary_reviewer: "fixture-primary",
+    independent_reviewer: "fixture-independent",
+    review_outcome: "agreement",
+    adjudicator: null,
+    integrator_id: "fixture-integrator",
+    accepted_at: "2026-07-28T00:00:00Z",
     rationale: "Reviewed exact application transition.",
   };
 }
@@ -188,11 +202,16 @@ describe("intervention placement identity and transitions", () => {
       transition(remove, [first!], []),
       transition(unknown, [], []),
     ], [add, modify, retain, resume, suspend, remove, unknown], registry)).toHaveLength(7);
-    expect(() => validateApplicationPlacementTransitions(
+    expect(validateApplicationPlacementTransitions(
       [transition(remove, [second!], [])],
       [remove],
       registry,
-    )).toThrow("pre-existing target");
+    )).toHaveLength(1);
+    expect(() => validateApplicationPlacementTransitions(
+      [transition(remove, ["placement:missing"], [])],
+      [remove],
+      registry,
+    )).toThrow("unknown placement");
     expect(() => validateApplicationPlacementTransitions(
       [transition(add, [], [first!]), transition(suspend, [first!], [second!])],
       [add, suspend],

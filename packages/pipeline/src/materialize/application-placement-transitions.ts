@@ -17,15 +17,22 @@ export type ApplicationPlacementTransition = {
   result_placement_ids: string[];
   decision_id: string;
   evidence_bindings: OperationalOccurrenceEvidenceBinding[];
-  reviewer: string;
-  reviewed_at: string;
+  batch_id: string;
+  manifest_sha256: string;
+  primary_reviewer: string;
+  independent_reviewer: string;
+  review_outcome: "agreement" | "adjudicated";
+  adjudicator: string | null;
+  integrator_id: string;
+  accepted_at: string;
   rationale: string;
 };
 
 const fields = new Set([
-  "action", "application_fingerprint", "application_id", "decision_id",
-  "evidence_bindings", "rationale", "result_placement_ids", "reviewed_at",
-  "reviewer", "schema_version", "target_placement_ids", "transition_id",
+  "accepted_at", "action", "adjudicator", "application_fingerprint", "application_id",
+  "batch_id", "decision_id", "evidence_bindings", "independent_reviewer", "integrator_id",
+  "manifest_sha256", "primary_reviewer", "rationale", "result_placement_ids",
+  "review_outcome", "schema_version", "target_placement_ids", "transition_id",
 ]);
 const evidenceFields = new Set(["evidence_id", "record_id", "role", "source_id"]);
 
@@ -94,10 +101,33 @@ export function parseApplicationPlacementTransition(
     result_placement_ids: strings(input.result_placement_ids, `${path}.result_placement_ids`),
     decision_id: string(input.decision_id, `${path}.decision_id`),
     evidence_bindings: evidence(input.evidence_bindings, `${path}.evidence_bindings`),
-    reviewer: string(input.reviewer, `${path}.reviewer`),
-    reviewed_at: string(input.reviewed_at, `${path}.reviewed_at`),
+    batch_id: string(input.batch_id, `${path}.batch_id`),
+    manifest_sha256: string(input.manifest_sha256, `${path}.manifest_sha256`),
+    primary_reviewer: string(input.primary_reviewer, `${path}.primary_reviewer`),
+    independent_reviewer: string(input.independent_reviewer, `${path}.independent_reviewer`),
+    review_outcome: string(input.review_outcome, `${path}.review_outcome`) as ApplicationPlacementTransition["review_outcome"],
+    adjudicator: input.adjudicator === null ? null : string(input.adjudicator, `${path}.adjudicator`),
+    integrator_id: string(input.integrator_id, `${path}.integrator_id`),
+    accepted_at: string(input.accepted_at, `${path}.accepted_at`),
     rationale: string(input.rationale, `${path}.rationale`),
   };
+  if (!/^[a-f0-9]{64}$/u.test(row.manifest_sha256)) {
+    throw new Error(`${path}.manifest_sha256 must be sha256`);
+  }
+  if (!["agreement", "adjudicated"].includes(row.review_outcome)) {
+    throw new Error(`${path}.review_outcome is invalid`);
+  }
+  if (row.primary_reviewer === row.independent_reviewer) {
+    throw new Error(`${path}: primary and independent reviewers must be distinct`);
+  }
+  if (row.review_outcome === "agreement" && row.adjudicator !== null) {
+    throw new Error(`${path}: agreement must not name an adjudicator`);
+  }
+  if (row.review_outcome === "adjudicated" &&
+      (row.adjudicator === null || row.adjudicator === row.primary_reviewer ||
+       row.adjudicator === row.independent_reviewer)) {
+    throw new Error(`${path}: adjudication requires a distinct adjudicator`);
+  }
   const expectedId = `transition:${createHash("sha256")
     .update(stableJson({
       application_id: row.application_id,
@@ -125,7 +155,28 @@ export function validateApplicationPlacementTransitions(
   }
   const applicationsById = new Map(applications.map((application) => [application.application_id, application]));
   const placementsById = new Map(registry.map((placement) => [placement.placement_id, placement]));
-  const established = new Set<string>();
+  // Identity operations are reviewed before transition replay. A placement in
+  // the registry is therefore an existing target even when its establishing
+  // evidence came from an independent inventory rather than an earlier
+  // application in this transition set.
+  const established = new Set(registry.map((placement) => placement.placement_id));
+  const hasSuccessorLineage = (targetId: string, resultId: string): boolean => {
+    if (targetId === resultId) return true;
+    const pending = [targetId];
+    const seen = new Set(pending);
+    while (pending.length) {
+      const current = placementsById.get(pending.shift()!);
+      if (!current) continue;
+      for (const successorId of current.successor_placement_ids) {
+        if (successorId === resultId) return true;
+        if (!seen.has(successorId)) {
+          seen.add(successorId);
+          pending.push(successorId);
+        }
+      }
+    }
+    return false;
+  };
   const actionOrder: Record<ApplicationPlacementTransition["action"], number> = {
     add: 0,
     retain: 1,
@@ -197,8 +248,9 @@ export function validateApplicationPlacementTransitions(
     if (transition.result_placement_ids.length === 0) throw new Error(`${transition.transition_id}: modify requires a result`);
     for (const resultId of transition.result_placement_ids) {
       if (transition.target_placement_ids.includes(resultId)) continue;
-      const result = placementsById.get(resultId)!;
-      if (!result.predecessor_placement_ids.some((id) => transition.target_placement_ids.includes(id))) {
+      if (!transition.target_placement_ids.some((targetId) =>
+        hasSuccessorLineage(targetId, resultId)
+      )) {
         throw new Error(`${transition.transition_id}: modify lacks same-placement continuity or lineage`);
       }
     }
@@ -217,4 +269,42 @@ export function loadApplicationPlacementTransitions(dir: string): ApplicationPla
     }
     return transition;
   });
+}
+
+export function validateApplicationPlacementTransitionManifests(
+  values: readonly ApplicationPlacementTransition[],
+  batchesDir: string,
+): ApplicationPlacementTransition[] {
+  return values.map((value, index) => {
+    const transition = parseApplicationPlacementTransition(
+      value,
+      `accepted application placement transition[${index}]`,
+    );
+    const path = join(batchesDir, `${transition.batch_id}.json`);
+    if (!existsSync(path)) throw new Error(`${transition.transition_id}: missing frozen batch manifest`);
+    const content = readFileSync(path, "utf8");
+    if (createHash("sha256").update(content).digest("hex") !== transition.manifest_sha256) {
+      throw new Error(`${transition.transition_id}: frozen batch manifest hash drifted`);
+    }
+    const manifest = object(JSON.parse(content) as unknown, path);
+    if (manifest.batch_id !== transition.batch_id || !Array.isArray(manifest.candidates)) {
+      throw new Error(`${transition.transition_id}: frozen batch identity is inconsistent`);
+    }
+    const candidates = manifest.candidates.map((candidate, candidateIndex) =>
+      object(candidate, `${path}.candidates[${candidateIndex}]`)
+    ).filter((candidate) => candidate.application_id === transition.application_id);
+    if (candidates.length !== 1 ||
+        candidates[0]!.application_fingerprint !== transition.application_fingerprint) {
+      throw new Error(`${transition.transition_id}: application pin drifted from frozen manifest`);
+    }
+    const assignments = object(manifest.reviewer_assignments, `${path}.reviewer_assignments`);
+    if (assignments.primary_reviewer !== transition.primary_reviewer ||
+        assignments.required_independent_reviewer !== transition.independent_reviewer ||
+        assignments.single_writer_integrator !== transition.integrator_id ||
+        (transition.review_outcome === "adjudicated" &&
+         assignments.clean_room_adjudicator !== transition.adjudicator)) {
+      throw new Error(`${transition.transition_id}: reviewer assignment drifted from frozen manifest`);
+    }
+    return transition;
+  }).sort((a, b) => a.transition_id.localeCompare(b.transition_id));
 }

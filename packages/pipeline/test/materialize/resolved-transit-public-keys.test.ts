@@ -108,6 +108,44 @@ describe("resolved transit public key registry", () => {
     ])).toThrow("stale prior public key");
   });
 
+  it("preserves a placement key when its current claim is corrected append-only", () => {
+    const original: PublicKeyProposal = {
+      key_kind: "placement",
+      subject_id: "placement:0123456789abcdef01234567",
+      owner_intervention_id: null,
+      public_key: "q1-bus-lane-route-wide",
+      establishment_method: "accepted_review",
+      decision_id: "placement:reviewed-establishment",
+      proposal_basis: {
+        route_key: "q1",
+        treatment_family_key: "bus-lane",
+        scope_kind: "route_wide",
+      },
+    };
+    const corrected: PublicKeyProposal = {
+      ...original,
+      public_key: "q1-bus-lane-bounded-segment-corridor-one",
+      proposal_basis: {
+        ...original.proposal_basis,
+        scope_kind: "bounded_segment",
+      },
+    };
+    const establishment = publicKeyEstablishOperation(original);
+    const migration = reconcilePublicKeyMigration({
+      existing_operations: [establishment],
+      proposals: [corrected],
+      input_fingerprint: "fixture-corrected-placement-claim",
+      asOfDate: "2026-07-29",
+      generatorCommit: "fixture-commit",
+    });
+    expect(migration.proposed_operations).toEqual([]);
+    expect(resolvePublicKeySubject(
+      replayPublicKeyOperations([establishment]),
+      "placement",
+      original.subject_id,
+    )?.public_key).toBe(original.public_key);
+  });
+
   it("retains accepted subject redirects and key aliases while rejecting cyclic or duplicate ownership", () => {
     const oldProposal: PublicKeyProposal = {
       key_kind: "intervention_component",

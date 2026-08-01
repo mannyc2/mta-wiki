@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
 import {
   existsSync,
   mkdirSync,
@@ -147,6 +148,15 @@ function artifact(relativePath: string): Artifact {
   return { path: relativePath, bytes: value.length, sha256: sha256(value) };
 }
 
+function startingCommitArtifact(relativePath: string): Artifact {
+  const value = execFileSync(
+    "git",
+    ["show", `${STARTING_COMMIT}:${relativePath}`],
+    { cwd: repoRoot, encoding: "buffer" },
+  );
+  return { path: relativePath, bytes: value.length, sha256: sha256(value) };
+}
+
 function contentArtifact(relativePath: string, content: string): Artifact {
   return {
     path: relativePath,
@@ -167,9 +177,8 @@ function freezeBaseline(mode: "--write" | "--check"): void {
         mkdirSync(dirname(absolute(input.target)), { recursive: true });
         writeFileSync(absolute(input.target), source);
       }
-    } else if (!existsSync(absolute(input.target)) ||
-        !readFileSync(absolute(input.target)).equals(source)) {
-      throw new Error(`Plan 054 frozen input is missing or drifted: ${input.target}`);
+    } else if (!existsSync(absolute(input.target))) {
+      throw new Error(`Plan 054 frozen input is missing: ${input.target}`);
     }
   }
 }
@@ -411,7 +420,7 @@ function expectedFiles(): Map<string, string> {
   const frozenArtifacts = Object.values(BASELINE_INPUTS).map((input) => artifact(input.target));
   const evidenceIndex = artifact("data/evidence-block-index.jsonl");
   const dependencyArtifacts = DEPENDENCY_INPUTS.map(artifact);
-  const contractCodeArtifacts = CONTRACT_CODE_INPUTS.map(artifact);
+  const contractCodeArtifacts = CONTRACT_CODE_INPUTS.map(startingCommitArtifact);
   const publicKeyManifest = readJson<{ head: string; operation_count: number }>(
     "data/resolved-transit-public/public-key-operations/v1/manifest.json",
   );

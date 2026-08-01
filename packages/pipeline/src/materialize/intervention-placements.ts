@@ -19,7 +19,15 @@ type OperationBase = {
   schema_version: 1;
   operation_id: string;
   decision_id: string;
+  candidate_ids: string[];
   issued_at: string;
+  batch_id: string;
+  manifest_sha256: string;
+  primary_reviewer: string;
+  independent_reviewer: string;
+  review_outcome: "agreement" | "adjudicated";
+  adjudicator: string | null;
+  integrator_id: string;
   rationale: string;
 };
 
@@ -82,6 +90,13 @@ export type InterventionPlacementResolution =
   | { state: "redirect"; placement_id: string; requested_ref: string; lineage: string[] }
   | { state: "retired_identity"; placement_id: string; successors: string[] }
   | { state: "missing"; requested_ref: string };
+
+export type InterventionPlacementRegistryPartition = {
+  registry_count: number;
+  live_count: number;
+  redirect_count: number;
+  retired_count: number;
+};
 
 function sha256(value: string): string {
   return createHash("sha256").update(value).digest("hex");
@@ -153,7 +168,11 @@ function claim(value: unknown, path: string): InterventionPlacementFoundingClaim
   };
 }
 
-const baseFields = ["decision_id", "issued_at", "operation", "operation_id", "rationale", "schema_version"];
+const baseFields = [
+  "adjudicator", "batch_id", "candidate_ids", "decision_id", "independent_reviewer", "integrator_id",
+  "issued_at", "manifest_sha256", "operation", "operation_id", "primary_reviewer",
+  "rationale", "review_outcome", "schema_version",
+];
 const operationFields: Record<InterventionPlacementIdentityOperation["operation"], string[]> = {
   establish: [...baseFields, "aliases", "claim", "founding_key"],
   alias: [...baseFields, "alias", "placement_id"],
@@ -176,9 +195,34 @@ export function parseInterventionPlacementIdentityOperation(
     schema_version: 1 as const,
     operation_id: string(input.operation_id, `${path}.operation_id`),
     decision_id: string(input.decision_id, `${path}.decision_id`),
+    candidate_ids: strings(input.candidate_ids, `${path}.candidate_ids`, false),
     issued_at: string(input.issued_at, `${path}.issued_at`),
+    batch_id: string(input.batch_id, `${path}.batch_id`),
+    manifest_sha256: string(input.manifest_sha256, `${path}.manifest_sha256`),
+    primary_reviewer: string(input.primary_reviewer, `${path}.primary_reviewer`),
+    independent_reviewer: string(input.independent_reviewer, `${path}.independent_reviewer`),
+    review_outcome: string(input.review_outcome, `${path}.review_outcome`) as OperationBase["review_outcome"],
+    adjudicator: input.adjudicator === null ? null : string(input.adjudicator, `${path}.adjudicator`),
+    integrator_id: string(input.integrator_id, `${path}.integrator_id`),
     rationale: string(input.rationale, `${path}.rationale`),
   };
+  if (!/^[a-f0-9]{64}$/u.test(base.manifest_sha256)) {
+    throw new Error(`${path}.manifest_sha256 must be sha256`);
+  }
+  if (!["agreement", "adjudicated"].includes(base.review_outcome)) {
+    throw new Error(`${path}.review_outcome is invalid`);
+  }
+  if (base.primary_reviewer === base.independent_reviewer) {
+    throw new Error(`${path}: primary and independent reviewers must be distinct`);
+  }
+  if (base.review_outcome === "agreement" && base.adjudicator !== null) {
+    throw new Error(`${path}: agreement must not name an adjudicator`);
+  }
+  if (base.review_outcome === "adjudicated" &&
+      (base.adjudicator === null || base.adjudicator === base.primary_reviewer ||
+       base.adjudicator === base.independent_reviewer)) {
+    throw new Error(`${path}: adjudication requires a distinct adjudicator`);
+  }
   if (operation === "establish") return {
     ...base, operation,
     founding_key: string(input.founding_key, `${path}.founding_key`),
@@ -333,7 +377,14 @@ export function replayInterventionPlacementIdentityOperations(
     const entry = registry.get(operation.placement_id);
     if (!entry || entry.registry_state !== "live_identity") throw new Error(`${operation.operation_id}: retire target is not live`);
     for (const successorId of operation.successor_placement_ids) {
-      if (!registry.has(successorId)) throw new Error(`${operation.operation_id}: missing retirement successor`);
+      const successor = registry.get(successorId);
+      if (!successor || successor.registry_state !== "live_identity" || successorId === entry.placement_id) {
+        throw new Error(`${operation.operation_id}: missing or non-live retirement successor`);
+      }
+      successor.predecessor_placement_ids = [...new Set([
+        ...successor.predecessor_placement_ids,
+        entry.placement_id,
+      ])].sort();
     }
     entry.registry_state = "retired_identity";
     entry.successor_placement_ids = operation.successor_placement_ids;
@@ -341,7 +392,53 @@ export function replayInterventionPlacementIdentityOperations(
     entry.identity_decision_ids.push(operation.decision_id);
     entry.operation_ids.push(operation.operation_id);
   }
-  return [...registry.values()].sort((a, b) => a.placement_id.localeCompare(b.placement_id));
+  const result = [...registry.values()].sort((a, b) => a.placement_id.localeCompare(b.placement_id));
+  interventionPlacementRegistryPartition(result);
+  return result;
+}
+
+export function interventionPlacementRegistryPartition(
+  registry: readonly InterventionPlacementRegistryEntry[],
+): InterventionPlacementRegistryPartition {
+  const ids = new Set(registry.map((entry) => entry.placement_id));
+  if (ids.size !== registry.length) throw new Error("duplicate placement registry id");
+  for (const entry of registry) {
+    for (const predecessorId of entry.predecessor_placement_ids) {
+      const predecessor = registry.find((candidate) => candidate.placement_id === predecessorId);
+      if (!predecessor || !predecessor.successor_placement_ids.includes(entry.placement_id)) {
+        throw new Error(`${entry.placement_id}: asymmetric predecessor lineage`);
+      }
+    }
+    for (const successorId of entry.successor_placement_ids) {
+      const successor = registry.find((candidate) => candidate.placement_id === successorId);
+      if (!successor || !successor.predecessor_placement_ids.includes(entry.placement_id)) {
+        throw new Error(`${entry.placement_id}: asymmetric successor lineage`);
+      }
+    }
+  }
+  let live = 0;
+  let redirect = 0;
+  let retired = 0;
+  for (const entry of registry) {
+    if (entry.registry_state === "live_identity") {
+      live += 1;
+      continue;
+    }
+    if (resolveInterventionPlacement(entry.placement_id, registry).state === "redirect") {
+      redirect += 1;
+    } else {
+      retired += 1;
+    }
+  }
+  if (registry.length !== live + redirect + retired) {
+    throw new Error("placement registry live/redirect/retired partition is unbalanced");
+  }
+  return {
+    registry_count: registry.length,
+    live_count: live,
+    redirect_count: redirect,
+    retired_count: retired,
+  };
 }
 
 export function resolveInterventionPlacement(
@@ -385,6 +482,48 @@ export function loadInterventionPlacementIdentityOperations(
       }
       return operation;
     });
+}
+
+export function validateInterventionPlacementIdentityOperationManifests(
+  values: readonly InterventionPlacementIdentityOperation[],
+  batchesDir: string,
+): InterventionPlacementIdentityOperation[] {
+  return values.map((value, index) => {
+    const operation = parseInterventionPlacementIdentityOperation(
+      value,
+      `accepted placement identity operation[${index}]`,
+    );
+    const path = join(batchesDir, `${operation.batch_id}.json`);
+    if (!existsSync(path)) throw new Error(`${operation.operation_id}: missing frozen batch manifest`);
+    const content = readFileSync(path, "utf8");
+    if (sha256(content) !== operation.manifest_sha256) {
+      throw new Error(`${operation.operation_id}: frozen batch manifest hash drifted`);
+    }
+    const manifest = object(JSON.parse(content) as unknown, path);
+    if (manifest.batch_id !== operation.batch_id) {
+      throw new Error(`${operation.operation_id}: frozen batch identity is inconsistent`);
+    }
+    const candidates = Array.isArray(manifest.candidates)
+      ? new Set(manifest.candidates.map((candidate, candidateIndex) =>
+        string(
+          object(candidate, `${path}.candidates[${candidateIndex}]`).candidate_id,
+          `${path}.candidates[${candidateIndex}].candidate_id`,
+        )
+      ))
+      : new Set<string>();
+    if (operation.candidate_ids.some((candidateId) => !candidates.has(candidateId))) {
+      throw new Error(`${operation.operation_id}: identity candidate is absent from frozen batch manifest`);
+    }
+    const assignments = object(manifest.reviewer_assignments, `${path}.reviewer_assignments`);
+    if (assignments.primary_reviewer !== operation.primary_reviewer ||
+        assignments.required_independent_reviewer !== operation.independent_reviewer ||
+        assignments.single_writer_integrator !== operation.integrator_id ||
+        (operation.review_outcome === "adjudicated" &&
+         assignments.clean_room_adjudicator !== operation.adjudicator)) {
+      throw new Error(`${operation.operation_id}: reviewer assignment drifted from frozen manifest`);
+    }
+    return operation;
+  }).sort((a, b) => a.operation_id.localeCompare(b.operation_id));
 }
 
 export function interventionPlacementRegistryJsonl(

@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "plan_id": "plan-054",
+  "review_stage": "primary_proposal_complete",
+  "reviewer_role": "primary",
+  "reviewed_at": "2026-08-01T11:32:40.553Z",
+  "frozen_portfolio": {
+    "starting_commit_sha": "d270fa492aaa53226ec1e32915ad4e2e01d2d615",
+    "candidate_count": 1773,
+    "batch_count": 43,
+    "cohort_sha256": "357916356880d40d682252fe321370543efe2ebd693c2f89e16cd3f2cc6a30ce",
+    "cohort_input_sha256": "3b6b693bcc07acf42c085c2de3f5bb72dd5705dafc6d38ac24032a36814b3b5c",
+    "candidate_id_partition_sha256": "50e7343f0280fee884928742b1cc3e460cc62165642d70107b7274c3c9dca3e1",
+    "manifest_partition_sha256": "a16369cf468fa80cb1fcbfa61e8f8452d24738fda629b1de59cc193154d82b83",
+    "public_key_replay_head": "ab00ce5bcb7f9db576eab3e6152ff5f6de6b160c74cd0bf4f0c29581cf9d724d"
+  },
+  "proposal_counts": {
+    "total": 1773,
+    "by_origin": {
+      "application": 343,
+      "later_lifecycle": 1430
+    },
+    "by_terminal_disposition": {
+      "ambiguous": 1406,
+      "duplicate_alias": 2,
+      "not_a_placement": 263,
+      "resolved_placement": 102
+    },
+    "by_application_action_and_transition": {
+      "add:positive_transition": 104,
+      "modify:negative_transition": 109,
+      "remove:negative_transition": 117,
+      "resume:negative_transition": 7,
+      "retain:negative_transition": 1,
+      "unknown:negative_transition": 5
+    },
+    "identity_operations": 104,
+    "positive_transitions": 104,
+    "negative_transitions": 239,
+    "decisions_with_risk_flags": 1773
+  },
+  "all_risk_flags": {
+    "accepted_ambiguity_no_identity_guess": 1406,
+    "action_add": 104,
+    "action_modify": 109,
+    "action_remove": 117,
+    "action_resume": 7,
+    "action_retain": 1,
+    "action_unknown": 5,
+    "application_transition": 343,
+    "documentary_event_nonauthorizing": 1167,
+    "documentary_not_current_authority": 1430,
+    "documentary_phase_approved": 256,
+    "documentary_phase_cancelled": 6,
+    "documentary_phase_completed": 141,
+    "documentary_phase_construction": 160,
+    "documentary_phase_expanded": 40,
+    "documentary_phase_funded": 10,
+    "documentary_phase_installed": 27,
+    "documentary_phase_launched": 441,
+    "documentary_phase_modified": 76,
+    "documentary_phase_piloted": 45,
+    "documentary_phase_planned": 103,
+    "documentary_phase_proposed": 63,
+    "documentary_phase_resumed": 19,
+    "documentary_phase_studied": 36,
+    "documentary_phase_suspended": 7,
+    "duplicate_alias_common_retained_public_key": 2,
+    "explicit_negative_transition": 239,
+    "explicit_outside_placement_model": 263,
+    "generic_lifecycle_false_positive": 263,
+    "identity": 1773,
+    "independent_lifecycle_evidence": 1430,
+    "modify_continuity": 109,
+    "must_not_establish": 117,
+    "nonauthorizing_unknown": 5,
+    "plural_evidence_membership": 314,
+    "removal_target": 130,
+    "scope_ambiguity": 138,
+    "scope_preserved_unknown_not_inferred": 29,
+    "semantic_acceptance": 1773,
+    "stable_public_identity": 1773
+  },
+  "invariants": {
+    "every_candidate_exactly_once": true,
+    "reviewer_ids_match_manifests": true,
+    "all_application_candidates_have_transition_or_negative": true,
+    "remove_suspend_establishments": 0,
+    "non_add_establishments": 0,
+    "duplicate_alias_operations": 2,
+    "documentary_establishments": 0,
+    "provider_requests": 0,
+    "provider_cost_usd": 0,
+    "tracked_workspace_files_modified": 0,
+    "semantic_acceptance_performed": false
+  },
+  "output": {
+    "decisions_path": "/tmp/plan054-primary-review.jsonl",
+    "decisions_bytes": 7206306,
+    "decisions_sha256": "92c71c00eca44cff49ab46a95e670f77cc5cdeb385035af7cfba170b20c29846"
+  }
+}
