@@ -440,7 +440,7 @@ function expectedFiles(): Map<string, string> {
       "f9d02df9f444f6a30070116f81cde294b0c79fbb6077b3eba974dce4bff6de78",
     correction_reason:
       "Neutralize preaccepted active semantics before review; six planned and three route-rename candidates require evidence-specific terminal decisions.",
-    review_started_against_superseded_freeze: false,
+    review_started_against_superseded_freeze: true,
     semantic_acceptance_started_against_superseded_freeze: false,
   });
   files.set(FREEZE_CORRECTION, freezeCorrectionContent);
@@ -587,15 +587,22 @@ function expectedFiles(): Map<string, string> {
 }
 
 const mode = process.argv[2];
-if ((mode !== "--write" && mode !== "--check") || process.argv.length !== 3) {
-  throw new Error("usage: bun scripts/freeze-plan055-lifecycle-batches.ts --write|--check");
+if ((mode !== "--write" && mode !== "--check" && mode !== "--repair-receipt-truth") ||
+    process.argv.length !== 3) {
+  throw new Error(
+    "usage: bun scripts/freeze-plan055-lifecycle-batches.ts --write|--check|--repair-receipt-truth",
+  );
 }
 const files = expectedFiles();
 for (const [relativePath, content] of files) {
   const path = absolute(relativePath);
-  if (mode === "--write") {
+  if (mode === "--write" || mode === "--repair-receipt-truth") {
     if (existsSync(path) && readFileSync(path, "utf8") !== content) {
-      throw new Error(`refusing to rewrite frozen Plan 055 artifact: ${relativePath}`);
+      const repairable = relativePath === FREEZE_CORRECTION || relativePath === PORTFOLIO ||
+        relativePath.startsWith(`${BATCHES}/`);
+      if (mode !== "--repair-receipt-truth" || !repairable) {
+        throw new Error(`refusing to rewrite frozen Plan 055 artifact: ${relativePath}`);
+      }
     }
     mkdirSync(dirname(path), { recursive: true });
     writeFileSync(path, content);
