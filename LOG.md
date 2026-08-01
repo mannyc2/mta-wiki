@@ -6,6 +6,29 @@ and active caveats. Do not use it as a transcript, run log, or plan archive.
 
 ## 2026-08-01
 
+### Published the final production Resolved Transit Knowledge Pack successor
+
+- Published `resolved-pack-v1-production` as the latest non-prerelease GitHub
+  Release and final `LATEST` value. It immutably supersedes the first
+  production candidate after repairing that candidate's stale `LATEST`
+  regression assertion. The annotated tag object is
+  `eeb1a6ccc4d6b7ffcbfe2730c84e2d74eac67b84` and targets fully gated commit
+  `159b8e79c8feeb3a658d7f57790020b88df17edb`.
+- Two clean recuts from generator `ae1fb7704f0d878075d41fc38ebac83d4665b44f`
+  are identical across all 61 files. The manifest is
+  `b4ebf56d6db88ae0c75d97ac2091ab15c97e2e8e72b1fee738db921d5d001617`,
+  build ID is `6f904a0a4965f279aa91be738fe469f41d8a7bad078a43cef42c28ebb435717e`,
+  and the successor handoff has no production-ineligibility reasons.
+- Freshly downloaded assets exactly match local bytes: archive
+  `5df8c07e182711aa5ba231137a6d1fa51fcf04ad02bad8ff4e4e6f9b0250582f`,
+  manifest `b4ebf56d6db88ae0c75d97ac2091ab15c97e2e8e72b1fee738db921d5d001617`,
+  and checksum file
+  `96e00faaff903c44716a3a736e0b465c19f2383a8dbcac2a2b07d80a855b7505`.
+  The final aggregate gate passed 2,007 tests with one skip and zero failures,
+  validation reported zero issues, and the determinism anchor was unchanged.
+  Tracker pin and deployment remain STOP-blocked by downstream Plans 098 and
+  106; the Tracker checkout was not mutated. Provider usage and cost were zero.
+
 ### Published the production Resolved Transit Knowledge Pack
 
 - Published `resolved-pack-v1-production-candidate` as the current non-prerelease

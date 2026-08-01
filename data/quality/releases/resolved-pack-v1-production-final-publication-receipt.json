@@ -1,0 +1,109 @@
+{
+  "as_of_date": "2026-07-27",
+  "assets": [
+    {
+      "bytes": 182,
+      "fresh_download_byte_equal": true,
+      "name": "SHA256SUMS",
+      "sha256": "96e00faaff903c44716a3a736e0b465c19f2383a8dbcac2a2b07d80a855b7505"
+    },
+    {
+      "bytes": 37552,
+      "fresh_download_byte_equal": true,
+      "name": "manifest.json",
+      "sha256": "b4ebf56d6db88ae0c75d97ac2091ab15c97e2e8e72b1fee738db921d5d001617"
+    },
+    {
+      "bytes": 12453103,
+      "extracted_tree_byte_equal": true,
+      "fresh_download_byte_equal": true,
+      "independent_archive_byte_equal": true,
+      "name": "resolved-pack-v1-production.tar.zst",
+      "sha256": "5df8c07e182711aa5ba231137a6d1fa51fcf04ad02bad8ff4e4e6f9b0250582f"
+    }
+  ],
+  "build_id": "6f904a0a4965f279aa91be738fe469f41d8a7bad078a43cef42c28ebb435717e",
+  "contract_id": "resolved-pack-v1-production-final-publication-receipt-v1",
+  "deployment": {
+    "approved": true,
+    "performed": false,
+    "reason_codes": [
+      "tracker_pin_not_performed",
+      "atomic_serving_pointer_incomplete",
+      "resolved_pack_consumer_cutover_incomplete"
+    ],
+    "status": "blocked"
+  },
+  "external_publication": {
+    "approved": true,
+    "draft": false,
+    "github_latest": true,
+    "performed": true,
+    "prerelease": false,
+    "published_at": "2026-08-01T17:30:03Z",
+    "repository": "mannyc2/mta-wiki",
+    "tag_name": "resolved-pack-v1-production",
+    "tag_object_sha1": "eeb1a6ccc4d6b7ffcbfe2730c84e2d74eac67b84",
+    "target_commit": "159b8e79c8feeb3a658d7f57790020b88df17edb",
+    "url": "https://github.com/mannyc2/mta-wiki/releases/tag/resolved-pack-v1-production"
+  },
+  "full_tree_partition_sha256": "a491a78e3c2cb80b4c5916dc63b90e8957fbc087053ced786784461c4627260d",
+  "generator_commit": "ae1fb7704f0d878075d41fc38ebac83d4665b44f",
+  "handoff_id": "resolved-pack-v1-production-successor-handoff:4cdf5b48b45c28db0f4f2bb712c50d70d0349f451ed088dc9bcdbd7039d4323c",
+  "independent_recut": {
+    "exact_byte_equality": true,
+    "exact_file_count": 61,
+    "root_count": 2
+  },
+  "latest_promotion": {
+    "approved": true,
+    "commit": "31e084d63988971cc7aceaa0f060b8c173ce891c",
+    "performed": true,
+    "value": "resolved-pack-v1-production"
+  },
+  "manifest_sha256": "b4ebf56d6db88ae0c75d97ac2091ab15c97e2e8e72b1fee738db921d5d001617",
+  "owner_authority": "owner all-approvals instruction",
+  "promotion_commit": "159b8e79c8feeb3a658d7f57790020b88df17edb",
+  "provider_usage": {
+    "actual_cost_usd": 0,
+    "provider_requests": 0
+  },
+  "publication_receipt_id": "resolved-pack-v1-production-final-publication:1e46fe4a4f9299b6e73e5598813c1744299b810a08ab81ab6ce28ccb971025df",
+  "release_bytes_commit": "8d1df6882731caf739a3ed95a0fd0b80a33eec8d",
+  "release_id": "resolved-pack-v1-production",
+  "schema_version": 1,
+  "supersedes_release_id": "resolved-pack-v1-production-candidate",
+  "supersession_reason_code": "latest_pointer_regression_test_repaired",
+  "tracker_pin": {
+    "approved": true,
+    "performed": false,
+    "reason_codes": [
+      "atomic_serving_pointer_incomplete",
+      "resolved_pack_consumer_cutover_incomplete",
+      "legacy_local_authority_paths_present",
+      "tracker_worktree_dirty_and_ancestry_preflight_failed"
+    ],
+    "required_downstream_plans": [
+      "098",
+      "106"
+    ],
+    "status": "blocked",
+    "tracker_checkout_mutated": false
+  },
+  "verification_gates": {
+    "aggregate_check": true,
+    "determinism_combined_sha256": "33777f3cb1b600ec7b839fff47fe8370c7e6c5da97d277896e57618ec7a4a87a",
+    "full_suite": {
+      "failed": 0,
+      "passed": 2007,
+      "skipped": 1
+    },
+    "strict_release_verification": {
+      "canonical_records": 85396,
+      "manifest_version": 7,
+      "verified_files": 60
+    },
+    "typecheck": true,
+    "validation_issues": 0
+  }
+}
