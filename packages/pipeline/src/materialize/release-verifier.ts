@@ -1398,7 +1398,8 @@ export function verifyReleaseDirectory(releaseDir: string, expectedReleaseId = b
         strictPublicContractComplete: true,
         independentRecutVerified: false,
       });
-      if (JSON.stringify(receipt.production_gate_evidence) !== JSON.stringify(expectedEvidence)) {
+      if (stableJson(receipt.production_gate_evidence as unknown as JsonValue) !==
+          stableJson(expectedEvidence as unknown as JsonValue)) {
         throw new Error("manifest-v7 production gate evidence is not the independent source replay");
       }
     }

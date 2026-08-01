@@ -1,4 +1,6 @@
 import { describe, expect, it } from "bun:test";
+import { stableJson } from "@mta-wiki/db/stable-json";
+import type { JsonValue } from "@mta-wiki/db/types";
 import { buildReleaseReceipt, parseReleaseBuildReceipt } from "../../src/materialize/release-build-receipt.js";
 import {
   buildReleaseResourceDescriptors,
@@ -75,6 +77,7 @@ describe("manifest-v7 semantic envelope", () => {
     expect(receipt.production_eligible).toBe(true);
     expect(receipt.publication_eligible).toBe(true);
     expect(parseReleaseBuildReceipt(receipt)).toEqual(receipt);
+    expect(parseReleaseBuildReceipt(JSON.parse(stableJson(receipt as unknown as JsonValue)))).toEqual(receipt);
     expect(buildReleaseReceipt({ ...base, asOfDate: "2026-07-28" }).build_id).not.toBe(receipt.build_id);
     expect(buildReleaseReceipt({
       ...base,
