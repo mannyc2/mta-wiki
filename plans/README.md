@@ -11,8 +11,8 @@ is `plans/051-057-resolved-transit-completion-index.md`.
 | 051 | Evolvable occurrence/application review and stable public keys | 050 | DONE (`9cd32baa`) |
 | 052 | Close operational episode frontier | 051 | DONE (local closure; no publication authority) |
 | 053 | Review exact application semantics | 052 | DONE (local closure; no placement or publication authority) |
-| 054 | Close placement frontier and transitions | 053 | IN PROGRESS (semantic placement/transition review integrated; public-key and zero-assertion lifecycle reconciliation pending) |
-| 055 | Close bitemporal lifecycle and footprint | 054 | BLOCKED (054 gate) |
+| 054 | Close placement frontier and transitions | 053 | DONE (local closure; 1,773 terminal candidates, 104 placements, no lifecycle inference or publication) |
+| 055 | Close bitemporal lifecycle and footprint | 054 | READY |
 | 056 | Strict public pack and Tracker conformance | 055 | BLOCKED (055 gate) |
 | 057 | Production release, publication, and pin | 056 | BLOCKED (056 gate + owner approvals) |
 

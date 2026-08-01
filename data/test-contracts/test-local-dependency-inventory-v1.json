@@ -3,9 +3,9 @@
   "schema_version": 1,
   "baseline_commit": "6a713a74b40841635bbce98cc96340feeeb80bda",
   "scanner_sha256": "d1073bf30223e95dbc1784fe5003fe3baa8738f8db6ee128cb9cdbab18f84bc9",
-  "entrypoint_count": 194,
+  "entrypoint_count": 195,
   "unsafe_default_entrypoints": [],
-  "rows_sha256": "6841387bcffb29d3d31221507f22b21544589f2b1e6fb197268136ba5d6b4a33",
+  "rows_sha256": "c0f606389b53c70347df6e35aedd5b580b3f53e107ef13544c97dee77421f813",
   "rows": [
     {
       "owner_kind": "gate",
@@ -1010,6 +1010,30 @@
       "class": "tracked_contract_only",
       "reconstruction_command_or_corpus_pin": null,
       "rationale": "No ignored or local semantic dependency was detected.",
+      "safe_in_default_suite": true
+    },
+    {
+      "owner_kind": "test",
+      "entrypoint_path": "packages/pipeline/test/materialize/application-placement-transitions.test.ts",
+      "detected_access_sites": [
+        {
+          "path": "packages/pipeline/test/materialize/application-placement-transitions.test.ts",
+          "line": 143,
+          "kinds": [
+            "production_corpus"
+          ],
+          "excerpt": "source_path: \"raw/sources/source_fixture/blocks.jsonl\","
+        }
+      ],
+      "paths_or_patterns": [
+        "production_corpus"
+      ],
+      "transitive_helper_chain": [
+        "packages/pipeline/test/materialize/application-placement-transitions.test.ts"
+      ],
+      "class": "fixture_local",
+      "reconstruction_command_or_corpus_pin": "test-owned temporary fixture",
+      "rationale": "Uses a raw-shaped path only within a fixture it creates and removes itself.",
       "safe_in_default_suite": true
     },
     {

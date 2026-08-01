@@ -818,6 +818,18 @@ export function checkPublicKeyRegistry(asOfDate: string, root = repoRoot): {
   if (migration.proposed_operations.length || migration.requires_review_count) {
     throw new Error("public-key registry is incomplete");
   }
+  const liveUnknownKeys = registry.filter((entry) =>
+    entry.registry_state === "live" &&
+    entry.public_key.split("-").includes("unknown")
+  );
+  if (liveUnknownKeys.length > 0) {
+    throw new Error(
+      "public-key registry has live keys containing unknown: " +
+        liveUnknownKeys.map((entry) =>
+          `${entry.key_kind}|${entry.subject_id}|${entry.public_key}`
+        ).join(", "),
+    );
+  }
   const manifest = JSON.parse(readFileSync(join(registryDir(root), "manifest.json"), "utf8")) as {
     head: string; operation_count: number;
   };

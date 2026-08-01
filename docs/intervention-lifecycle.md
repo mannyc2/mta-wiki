@@ -49,12 +49,18 @@ and are forbidden inputs to new resolved builders.
 ## Current corpus boundary
 
 The current 343 applications have evidence-reviewed historical actions and
-extents, including explicitly accepted unknowns. Plan 053 intentionally did
-not adjudicate placement identity or transitions: all 1,773 placement
-candidates remain pending, and the placement registry, accepted transitions,
-lifecycle assertions, and current footprint remain empty. Application action
-alone never authorizes a placement. This is an evidence-preserving result:
-zero confirmed placements does not claim zero interventions exist.
+extents, including explicitly accepted unknowns. Plan 054 independently
+reviewed all 1,773 placement candidates and closed them as 104 distinct live
+placements, 239 accepted transition ambiguities, and 1,430 documentary rows
+that are not placements. The 104 accepted positive transitions are exact
+reviewed additions; every other application has an explicit accepted negative
+transition disposition. Application action alone never authorizes a placement.
+
+Lifecycle truth remains a separate Plan 055 review. The explicit 2026-07-27
+projection therefore contains zero accepted lifecycle assertions, 104
+`unknown` placement states, 104 reconciliation rows, and zero
+confirmed-current footprint rows. This is evidence preservation, not a claim
+that the placements are inactive or that the real-world footprint is zero.
 
 Build and inspect with an explicit date:
 

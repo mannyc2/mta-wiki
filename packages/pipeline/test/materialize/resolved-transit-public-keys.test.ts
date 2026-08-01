@@ -1,5 +1,6 @@
 import { describe, expect, it } from "bun:test";
 import {
+  checkPublicKeyRegistry,
   interventionComponentPublicKey,
   preparePublicKeyMigration,
   publicKeyEstablishOperation,
@@ -12,6 +13,13 @@ import {
 } from "@mta-wiki/pipeline/materialize/resolved-transit-public-keys";
 
 describe("resolved transit public key registry", () => {
+  it("publishes no live key containing an unknown placeholder", () => {
+    expect(checkPublicKeyRegistry("2026-07-27")).toMatchObject({
+      eligible: 681,
+      live: 681,
+    });
+  });
+
   it("prepares a complete lossless migration with explicit subject arithmetic", () => {
     const migration = preparePublicKeyMigration({
       asOfDate: "2026-07-27",

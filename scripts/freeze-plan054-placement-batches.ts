@@ -17,7 +17,7 @@ import { readCanonicalRecordsFromJsonl } from "../packages/pipeline/src/material
 import type { PlacementCandidateRow } from "../packages/pipeline/src/materialize/intervention-placement-frontier";
 import type { ResolvedInterventionApplication } from "../packages/pipeline/src/materialize/resolved-intervention-applications";
 import {
-  readPublicKeyOperations,
+  type PublicKeyOperation,
   replayPublicKeyOperations,
 } from "../packages/pipeline/src/materialize/resolved-transit-public-keys";
 
@@ -149,12 +149,25 @@ function artifact(relativePath: string): Artifact {
 }
 
 function startingCommitArtifact(relativePath: string): Artifact {
-  const value = execFileSync(
+  const value = startingCommitBytes(relativePath);
+  return { path: relativePath, bytes: value.length, sha256: sha256(value) };
+}
+
+function startingCommitBytes(relativePath: string): Buffer {
+  return execFileSync(
     "git",
     ["show", `${STARTING_COMMIT}:${relativePath}`],
     { cwd: repoRoot, encoding: "buffer" },
   );
-  return { path: relativePath, bytes: value.length, sha256: sha256(value) };
+}
+
+function startingCommitJson<T>(relativePath: string): T {
+  return JSON.parse(startingCommitBytes(relativePath).toString("utf8")) as T;
+}
+
+function startingCommitJsonl<T>(relativePath: string): T[] {
+  const text = startingCommitBytes(relativePath).toString("utf8").trim();
+  return text ? text.split("\n").map((line) => JSON.parse(line) as T) : [];
 }
 
 function contentArtifact(relativePath: string, content: string): Artifact {
@@ -242,7 +255,9 @@ function buildCohortRows(): CohortRow[] {
   );
   const applicationsById = new Map(applications.map((row) => [row.application_id, row]));
   const recordsById = new Map(readCanonicalRecordsFromJsonl().map((row) => [row.record_id, row]));
-  const publicKeys = replayPublicKeyOperations(readPublicKeyOperations(repoRoot));
+  const publicKeys = replayPublicKeyOperations(startingCommitJsonl<PublicKeyOperation>(
+    "data/resolved-transit-public/public-key-operations/v1/operations.jsonl",
+  ));
   const publicKeyBySubject = new Map(
     publicKeys
       .filter((row) => row.registry_state === "live" && row.key_kind === "intervention_component")
@@ -344,11 +359,11 @@ function batchSpecs(rows: readonly CohortRow[]): BatchSpec[] {
   const applicationRowsById = new Map(
     applicationRows.map((row) => [row.application?.application_id, row]),
   );
-  const plan053Portfolio = readJson<{
+  const plan053Portfolio = startingCommitJson<{
     manifests: Array<{ batch_id: string; path: string }>;
   }>("data/operational-application-semantics/campaigns/plan-053/portfolio.json");
   for (const priorBatch of plan053Portfolio.manifests) {
-    const priorManifest = readJson<{
+    const priorManifest = startingCommitJson<{
       application_ids: string[];
       evidence_shape: string;
     }>(priorBatch.path);
@@ -419,9 +434,9 @@ function expectedFiles(): Map<string, string> {
   const specs = batchSpecs(rows);
   const frozenArtifacts = Object.values(BASELINE_INPUTS).map((input) => artifact(input.target));
   const evidenceIndex = artifact("data/evidence-block-index.jsonl");
-  const dependencyArtifacts = DEPENDENCY_INPUTS.map(artifact);
+  const dependencyArtifacts = DEPENDENCY_INPUTS.map(startingCommitArtifact);
   const contractCodeArtifacts = CONTRACT_CODE_INPUTS.map(startingCommitArtifact);
-  const publicKeyManifest = readJson<{ head: string; operation_count: number }>(
+  const publicKeyManifest = startingCommitJson<{ head: string; operation_count: number }>(
     "data/resolved-transit-public/public-key-operations/v1/manifest.json",
   );
   const candidateIds = rows.map((row) => row.candidate.candidate_id).sort();

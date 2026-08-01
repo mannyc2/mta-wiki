@@ -4,6 +4,35 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-08-01
+
+### Closed placement identities and application transitions
+
+- Closed all 1,773 frozen placement candidates through independent review and
+  clean-room adjudication: 104 distinct live placements, 239 accepted
+  application-transition ambiguities, 1,430 documentary rows classified as
+  not placements, and zero pending or invalid candidates. The 104 positive
+  transitions are exact reviewed additions; all 109 modifies, 117 removes,
+  seven resumes, one retain, and five accepted-unknown applications carry
+  explicit negative transition dispositions rather than inferred targets.
+- Preserved every stable application and placement lookup without an identity
+  redirect. Three route/family/scope display collisions were independently
+  reviewed as distinct placements and established from their immutable
+  founding application keys; the other 101 placement keys migrated
+  losslessly. Twenty-nine resulting presentation keys containing the mutable
+  `unknown` scope token were then superseded, same-subject, by their unique
+  immutable founding application keys while retaining the prior keys as
+  aliases. The append-only registry is now 681/681 live at head
+  `8fca822b4a1242a75628e4f1bb58b5ba216c311251a0c7b7c0e04011adf18fd6`,
+  with zero unresolved review rows, redirects, or live keys containing
+  `unknown`.
+- Regenerated the explicit 2026-07-27 lifecycle projection without selecting
+  lifecycle truth: zero accepted assertions, 104 `unknown` placement states,
+  104 reconciliation rows, and zero confirmed-current footprint rows. This is
+  the honest Plan 054 boundary for Plan 055, not a claim that interventions
+  are inactive or absent. Provider usage and cost were zero; no release,
+  `LATEST`, publication, downstream pin, deployment, push, or merge occurred.
+
 ## 2026-07-31
 
 ### Evidence-bound exact application semantics

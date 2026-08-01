@@ -47,8 +47,8 @@ same-family components remain explicit rather than becoming a cross-product
 or a deduplicated family count.
 
 Stable placements are a separate resource. The positive current footprint
-contains only placements whose Plan 048 state is `confirmed_active` on the
-pack's explicit `as_of_date`. `last_confirmed_active`, inactive, planned,
+contains only placements whose accepted lifecycle state is `confirmed_active`
+on the pack's explicit `as_of_date`. `last_confirmed_active`, inactive, planned,
 suspended, conflicted, and unknown placements remain in state/history
 resources and summary counts but never become positive current rows. A
 removal or suspension action cannot create a placement or footprint row.

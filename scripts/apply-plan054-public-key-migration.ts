@@ -39,6 +39,14 @@ function json(value: unknown): string {
   return `${stableJson(value as JsonValue)}\n`;
 }
 
+function registryHead(operations: ReturnType<typeof readPublicKeyOperations>): string {
+  return sha256(
+    operations.map((operation) =>
+      stableJson(operation as unknown as JsonValue)
+    ).join("\n"),
+  );
+}
+
 function write(): void {
   if (existsSync(absolute(integrationRelative))) {
     throw new Error(`migration integration already exists: ${integrationRelative}`);
@@ -232,15 +240,19 @@ function check(): void {
     throw new Error("Plan 054 public-key receipt copies differ");
   }
   const result = checkPublicKeyRegistry(asOfDate);
+  const operations = readPublicKeyOperations();
+  const migrationPrefix = operations.slice(
+    0,
+    integration.result_registry.operation_count,
+  );
   if (
-    result.eligible !== integration.result_registry.eligible ||
-    result.live !== integration.result_registry.live ||
-    result.head !== integration.result_registry.head ||
+    migrationPrefix.length !== integration.result_registry.operation_count ||
+    registryHead(migrationPrefix) !== integration.result_registry.head ||
     result.eligible !== 681 ||
     result.live !== 681 ||
-    readPublicKeyOperations().length !== integration.result_registry.operation_count
+    operations.length < integration.result_registry.operation_count
   ) {
-    throw new Error("Plan 054 public-key registry result drifted");
+    throw new Error("Plan 054 public-key migration checkpoint drifted");
   }
 }
 

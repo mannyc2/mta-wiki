@@ -8,16 +8,29 @@ describe("resolved transit operator public display", () => {
   it("resolves every addressed presentation subject with immutable public keys", () => {
     const first = buildOperatorPublicDisplayDictionary("2026-07-27");
     const second = buildOperatorPublicDisplayDictionary("2026-07-27");
+    const componentScopes = first.scopes.filter((row) =>
+      typeof row.application_id === "string"
+    );
+    const placementScopes = first.scopes.filter((row) =>
+      typeof row.placement_id === "string"
+    );
     expect(second).toEqual(first);
     expect(first.summary).toMatchObject({
       episode_count: first.episodes.length,
-      component_count: first.scopes.length,
-      placement_count: 0,
+      component_count: componentScopes.length,
+      placement_count: placementScopes.length,
       route_count: first.routes.length,
       source_count: first.sources.length,
       treatment_family_count: first.treatment_families.length,
-      reconciliation: { requires_review: 0 },
+      reconciliation: {
+        resolved: 838,
+        requires_review: 0,
+        not_public: 0,
+      },
     });
+    expect(componentScopes).toHaveLength(343);
+    expect(placementScopes).toHaveLength(104);
+    expect(first.scopes).toHaveLength(447);
     expect(first.episodes.length).toBeGreaterThanOrEqual(130);
     expect(first.episodes.every((row) => typeof row.display_name === "string" && row.display_name.length > 0))
       .toBe(true);

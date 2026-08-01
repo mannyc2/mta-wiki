@@ -1,0 +1,1633 @@
+{
+  "schema_version": 1,
+  "contract_id": "resolved-transit-public-key-registry-v1",
+  "generator_commit": "9af715c5a75b70ade4808c95d8380f2a6839126d",
+  "as_of_date": "2026-07-27",
+  "registry_head": "c0020a87605111db924001cb116ca01ddaf51fb6db2931839d29974da2f18339",
+  "input_fingerprint": "b1dc46454df561432bb742bd2736f00a6c0c2b5ee56238511d7b45d74d8914dd",
+  "eligible_subject_count": 681,
+  "existing_live_key_count": 580,
+  "newly_established_losslessly": 101,
+  "newly_established_from_accepted_review": 0,
+  "requires_review_count": 0,
+  "proposed_operations": [
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:00b32c6da3c0821a71522c5d",
+      "key_kind": "placement",
+      "subject_id": "placement:cea101769e5a500ec41db6a2",
+      "owner_intervention_id": null,
+      "public_key": "m79-sbs-fare-collection-route-wide-route-m79-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m79-sbs",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:0243f70d80c26312c024e11c",
+      "key_kind": "placement",
+      "subject_id": "placement:6e9826797b6535e440d55704",
+      "owner_intervention_id": null,
+      "public_key": "q74-service-pattern-service-pattern-treatment-q74-college-forest-hills-connection-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q74",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:0452c5a08120b15fa252c296",
+      "key_kind": "placement",
+      "subject_id": "placement:a6d068b1cc7eef04d21fd62e",
+      "owner_intervention_id": null,
+      "public_key": "sim24-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-summer-2024",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "sim24",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:047ab9ed374c00f0ed14fbe7",
+      "key_kind": "placement",
+      "subject_id": "placement:af1c25399bade524a571461c",
+      "owner_intervention_id": null,
+      "public_key": "m16-fare-collection-bounded-segment-corridor-34th-st-busway",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m16",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "bounded_segment"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:0672d221d61de1bf3cfa07aa",
+      "key_kind": "placement",
+      "subject_id": "placement:6285bff96001970549308f92",
+      "owner_intervention_id": null,
+      "public_key": "qm63-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "qm63",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:07f4e7f7672148557f6c0c95",
+      "key_kind": "placement",
+      "subject_id": "placement:4c2b46cc71489e74687aab08",
+      "owner_intervention_id": null,
+      "public_key": "sim4c-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-summer-2024",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "sim4c",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:09c89db4103fe37e5c9bce8b",
+      "key_kind": "placement",
+      "subject_id": "placement:a4a85b5f13c5c3a19d58d590",
+      "owner_intervention_id": null,
+      "public_key": "q89-service-pattern-service-pattern-treatment-q89-q85-green-acres-replacement-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q89",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:0a6a09fdb53e11bb086d658a",
+      "key_kind": "placement",
+      "subject_id": "placement:b69e602656652036163ee64c",
+      "owner_intervention_id": null,
+      "public_key": "q53-sbs-bus-lane-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q53-sbs",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:0b2ece481f5b5e2e0d155fcf",
+      "key_kind": "placement",
+      "subject_id": "placement:5793fb4155b0e90fa3931f71",
+      "owner_intervention_id": null,
+      "public_key": "m100-automated-bus-lane-enforcement-route-wide-route-m100-ace",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m100",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:0fa29d7731b6d880124999c0",
+      "key_kind": "placement",
+      "subject_id": "placement:c69929539a34faea3b9f75c3",
+      "owner_intervention_id": null,
+      "public_key": "q51-service-pattern-service-pattern-treatment-q51-east-west-link-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q51",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:1048225484e6973e029044d4",
+      "key_kind": "placement",
+      "subject_id": "placement:f245fa7c3e921045f204268f",
+      "owner_intervention_id": null,
+      "public_key": "q75-service-pattern-service-pattern-treatment-q75-q30-short-trip-replacement-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q75",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:124c10e0745f383939de7e64",
+      "key_kind": "placement",
+      "subject_id": "placement:634747f710eb1ca3b9bc064c",
+      "owner_intervention_id": null,
+      "public_key": "bx36-signal-priority-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx36",
+        "treatment_family_key": "signal-priority",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:12a7693759e731497a8e63c1",
+      "key_kind": "placement",
+      "subject_id": "placement:6ddad6c7cf7ce71a463bd862",
+      "owner_intervention_id": null,
+      "public_key": "qm68-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "qm68",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:1414600086e1f2e5087c8f6f",
+      "key_kind": "placement",
+      "subject_id": "placement:9664030d4a91d2284a64a243",
+      "owner_intervention_id": null,
+      "public_key": "bx20-automated-bus-lane-enforcement-route-wide-route-bx20-ace",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx20",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:14c0fe69c00f383f98bca282",
+      "key_kind": "placement",
+      "subject_id": "placement:b47228ccd7ff8a0165dc2b2c",
+      "owner_intervention_id": null,
+      "public_key": "bx6-sbs-fare-collection-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx6-sbs",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:1595a9c822164ebaaa963fe4",
+      "key_kind": "placement",
+      "subject_id": "placement:80eda4b89cde8f80729088cc",
+      "owner_intervention_id": null,
+      "public_key": "q61-service-pattern-service-pattern-treatment-q61-beechhurst-flushing-connection-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q61",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:176a9674bf44b7a5f8100c51",
+      "key_kind": "placement",
+      "subject_id": "placement:b92b276add18251164e2f082",
+      "owner_intervention_id": null,
+      "public_key": "b68-automated-bus-lane-enforcement-route-wide-route-b68-nyct-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b68",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:186f5f79b89c358f53548392",
+      "key_kind": "placement",
+      "subject_id": "placement:38488b94aed2d91779e1a126",
+      "owner_intervention_id": null,
+      "public_key": "q80-service-pattern-service-pattern-treatment-q80-q10-limited-branch-replacement-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q80",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:1b92a7a5b1f32d3e3d464612",
+      "key_kind": "placement",
+      "subject_id": "placement:eb83cfbf5aeae424ce7007ad",
+      "owner_intervention_id": null,
+      "public_key": "m15-sbs-fare-collection-route-wide-route-m15-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m15-sbs",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:1f44785a3ba74c2cc86d3f2a",
+      "key_kind": "placement",
+      "subject_id": "placement:c5ce2cc909316e967cdcf6fd",
+      "owner_intervention_id": null,
+      "public_key": "sim1c-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-summer-2024",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "sim1c",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:1f8507214cb88b0cf4ca815a",
+      "key_kind": "placement",
+      "subject_id": "placement:1e27bb996952a2e2350d8d3b",
+      "owner_intervention_id": null,
+      "public_key": "m116-fare-collection-route-wide-route-m116",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m116",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:270e8ecbe58df1cd9d0fbbfd",
+      "key_kind": "placement",
+      "subject_id": "placement:e20ec28dba816edbbfc67611",
+      "owner_intervention_id": null,
+      "public_key": "m34-sbs-fare-collection-bounded-segment-corridor-34th-st-busway",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m34-sbs",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "bounded_segment"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:2791685174710916b12280e9",
+      "key_kind": "placement",
+      "subject_id": "placement:cf9a42c837d1c060449d669a",
+      "owner_intervention_id": null,
+      "public_key": "q80-service-pattern-service-pattern-treatment-q80-frequency-overnight-service-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q80",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:2a5a2e9c903e2c5480d092e7",
+      "key_kind": "placement",
+      "subject_id": "placement:d72b159fe578221e505d13a3",
+      "owner_intervention_id": null,
+      "public_key": "sim1c-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-spring-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "sim1c",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:32af7550185d43d7a7b711d8",
+      "key_kind": "placement",
+      "subject_id": "placement:9f095f6c2840d50fe662a7ac",
+      "owner_intervention_id": null,
+      "public_key": "b60-fare-collection-route-wide-route-b60",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b60",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:33052059446652c604162568",
+      "key_kind": "placement",
+      "subject_id": "placement:a78682f1cf77131077e90bda",
+      "owner_intervention_id": null,
+      "public_key": "bx3-automated-bus-lane-enforcement-route-wide-route-bx3",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx3",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:34e2475b272a5ff7cf0e3ba6",
+      "key_kind": "placement",
+      "subject_id": "placement:f64121c5fbd5a4e7c7912180",
+      "owner_intervention_id": null,
+      "public_key": "m4-automated-bus-lane-enforcement-route-wide-route-m4-ace",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m4",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:377eff4669c290bf10dced8c",
+      "key_kind": "placement",
+      "subject_id": "placement:f31df226c9254ee0e3a4b7b7",
+      "owner_intervention_id": null,
+      "public_key": "q52-sbs-bus-lane-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q52-sbs",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:3de871fb1bd0a1acb229d606",
+      "key_kind": "placement",
+      "subject_id": "placement:d6bb4a77affd8b3f237795a4",
+      "owner_intervention_id": null,
+      "public_key": "sim23-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-summer-2024",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "sim23",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:3e24352c94ac3553c2cb0b99",
+      "key_kind": "placement",
+      "subject_id": "placement:adf252827250405da2bd55c6",
+      "owner_intervention_id": null,
+      "public_key": "q61-service-pattern-service-pattern-treatment-q61-q15-beechhurst-replacement-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q61",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:3e287d1e9c190ffdc12dcacb",
+      "key_kind": "placement",
+      "subject_id": "placement:9a79b2cd391ffd6292bb7bfe",
+      "owner_intervention_id": null,
+      "public_key": "q45-service-pattern-service-pattern-treatment-q45-all-day-frequent-service-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q45",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:3ece17156ae85021d08d41d9",
+      "key_kind": "placement",
+      "subject_id": "placement:f1e71b80f20dbe1810d2879e",
+      "owner_intervention_id": null,
+      "public_key": "bm5-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-summer-2024",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bm5",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:460abc153c4d411909d011bd",
+      "key_kind": "placement",
+      "subject_id": "placement:3c8c0b50c18af2915c55c79f",
+      "owner_intervention_id": null,
+      "public_key": "qm64-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "qm64",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:46a2df704937ea1214fe95e5",
+      "key_kind": "placement",
+      "subject_id": "placement:c5819ed0cfd0acf704ef90ab",
+      "owner_intervention_id": null,
+      "public_key": "sim4c-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-spring-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "sim4c",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:4a09122e3177e80304fbd562",
+      "key_kind": "placement",
+      "subject_id": "placement:a670da6797c675d9df64322a",
+      "owner_intervention_id": null,
+      "public_key": "q52-sbs-fare-collection-bounded-segment-corridor-woodhaven-cross-bay-blvds",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q52-sbs",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "bounded_segment"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:527a7130546c4f712953689b",
+      "key_kind": "placement",
+      "subject_id": "placement:72c6c7b840ec5db3e885c0cb",
+      "owner_intervention_id": null,
+      "public_key": "b38-bus-lane-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b38",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:56b649260974be5b4a3cac29",
+      "key_kind": "placement",
+      "subject_id": "placement:8fab8834932a9439752d1650",
+      "owner_intervention_id": null,
+      "public_key": "q48-service-pattern-service-pattern-treatment-q48-glen-oaks-branch-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q48",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:573176bb74bbc6ec4dd8dd73",
+      "key_kind": "placement",
+      "subject_id": "placement:0507903d8d1152981b91185a",
+      "owner_intervention_id": null,
+      "public_key": "q14-service-pattern-service-pattern-treatment-q14-segment-combination-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q14",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:57eb257a855085c3254dcb10",
+      "key_kind": "placement",
+      "subject_id": "placement:704a1e44f33e1720fe100b3c",
+      "owner_intervention_id": null,
+      "public_key": "q53-sbs-fare-collection-bounded-segment-corridor-woodhaven-cross-bay-blvds",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q53-sbs",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "bounded_segment"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:5a1cf19e1906329e6c6d3f14",
+      "key_kind": "placement",
+      "subject_id": "placement:9a4fdbafdc48b51b9ef39c70",
+      "owner_intervention_id": null,
+      "public_key": "m15-sbs-bus-lane-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m15-sbs",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:5d3d4f8b9121841d2a0a8699",
+      "key_kind": "placement",
+      "subject_id": "placement:7b37713f6a410a4f750d91e1",
+      "owner_intervention_id": null,
+      "public_key": "q63-service-pattern-service-pattern-treatment-q63-northern-boulevard-connection-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q63",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:5efe1e4977820a0663d053d6",
+      "key_kind": "placement",
+      "subject_id": "placement:3b6ccfa69b3d52bff8af121c",
+      "owner_intervention_id": null,
+      "public_key": "m34a-sbs-fare-collection-route-wide-route-m34a-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m34a-sbs",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:6851554887cf123c2244db70",
+      "key_kind": "placement",
+      "subject_id": "placement:8f999804f4eabc2e7766b1bb",
+      "owner_intervention_id": null,
+      "public_key": "bm5-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-spring-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bm5",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:7097cbf242ac9f0803d868f3",
+      "key_kind": "placement",
+      "subject_id": "placement:1c4a4519e1ffc9818be11cd9",
+      "owner_intervention_id": null,
+      "public_key": "q86-service-pattern-service-pattern-treatment-q86-q5-q85-branch-combination-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q86",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:7248953a07162c193261bd81",
+      "key_kind": "placement",
+      "subject_id": "placement:b991cbcd9ed938806ae6924f",
+      "owner_intervention_id": null,
+      "public_key": "q75-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q75",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:7bc84d370f9ab0ce20e0b2fa",
+      "key_kind": "placement",
+      "subject_id": "placement:0b71209931c5b436c50ed75b",
+      "owner_intervention_id": null,
+      "public_key": "bx18a-fare-collection-route-wide-route-bx18a",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx18a",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:7f5badd917c690c0e52bf1d4",
+      "key_kind": "placement",
+      "subject_id": "placement:54af3bb4e18688df45753e21",
+      "owner_intervention_id": null,
+      "public_key": "b41-bus-lane-bounded-segment-corridor-flatbush-phase1-livingston-state",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b41",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "bounded_segment"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:856afcedec50aba25e942a4c",
+      "key_kind": "placement",
+      "subject_id": "placement:5a6f43ae0ad50df56effed8c",
+      "owner_intervention_id": null,
+      "public_key": "q89-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q89",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:876d11baba0408a1b9d4f74f",
+      "key_kind": "placement",
+      "subject_id": "placement:6509864ebce1ad9c19acedd7",
+      "owner_intervention_id": null,
+      "public_key": "m14-sbs-traffic-restriction-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m14-sbs",
+        "treatment_family_key": "traffic-restriction",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:88ab75c0ee9d27c1d4e5cdcf",
+      "key_kind": "placement",
+      "subject_id": "placement:bb618a15ce2c06cf56fbf774",
+      "owner_intervention_id": null,
+      "public_key": "q83-service-pattern-service-pattern-treatment-q83-overnight-24-7-service-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q83",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:8e7f8a22be7997d1b95bc3ae",
+      "key_kind": "placement",
+      "subject_id": "placement:ac64b0da8f0fb763eca0c701",
+      "owner_intervention_id": null,
+      "public_key": "s46-fare-collection-route-wide-route-s46",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "s46",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:8e849806c052ade48e3ab4e7",
+      "key_kind": "placement",
+      "subject_id": "placement:8215eb2501bf967d030e284e",
+      "owner_intervention_id": null,
+      "public_key": "q48-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q48",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:8ff2ad1e9c3234901a3add49",
+      "key_kind": "placement",
+      "subject_id": "placement:fdf5fee59ddff98568b9d2fc",
+      "owner_intervention_id": null,
+      "public_key": "m79-sbs-signal-priority-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m79-sbs",
+        "treatment_family_key": "signal-priority",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:90f2a977aef934fdb32ef973",
+      "key_kind": "placement",
+      "subject_id": "placement:dc5de9ad2a732a046a9134b4",
+      "owner_intervention_id": null,
+      "public_key": "b44-sbs-fare-collection-route-wide-route-b44-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b44-sbs",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:98628b23ec90966494f5f1ca",
+      "key_kind": "placement",
+      "subject_id": "placement:5dd876a592f98d112ca409f6",
+      "owner_intervention_id": null,
+      "public_key": "b46-sbs-bus-lane-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b46-sbs",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:99fb5c2595eb93b048446567",
+      "key_kind": "placement",
+      "subject_id": "placement:5f03cd99b5bf1400c34650f4",
+      "owner_intervention_id": null,
+      "public_key": "sim23-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-spring-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "sim23",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:9deabba8c9583fd2f64c66e1",
+      "key_kind": "placement",
+      "subject_id": "placement:c1033ab0f836a6a29bb27679",
+      "owner_intervention_id": null,
+      "public_key": "b44-sbs-bus-lane-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b44-sbs",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:9e1188cd80eb99fb8bad923b",
+      "key_kind": "placement",
+      "subject_id": "placement:fff04e23c6e3640df0a6b229",
+      "owner_intervention_id": null,
+      "public_key": "q100-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q100",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:9e300fb939372241105447f6",
+      "key_kind": "placement",
+      "subject_id": "placement:92ca87ceb817ed4645284ade",
+      "owner_intervention_id": null,
+      "public_key": "q70-sbs-bus-lane-bounded-segment-corridor-broadway-queens",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q70-sbs",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "bounded_segment"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:9f47be0ce04a2fc9fec887c8",
+      "key_kind": "placement",
+      "subject_id": "placement:9b8b1b097c6a9bafa38fea6c",
+      "owner_intervention_id": null,
+      "public_key": "bx18b-fare-collection-route-wide-route-bx18b",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx18b",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:a066d9b49a9bfef3ed6a8504",
+      "key_kind": "placement",
+      "subject_id": "placement:a0e5afbbbdb52f9151aef44c",
+      "owner_intervention_id": null,
+      "public_key": "qm11-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "qm11",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:a1bfd77b14ab7d5f08c5dba5",
+      "key_kind": "placement",
+      "subject_id": "placement:c775fa785fc9da658ad2826c",
+      "owner_intervention_id": null,
+      "public_key": "q63-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q63",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:a4f19b4adf51b58f733076bf",
+      "key_kind": "placement",
+      "subject_id": "placement:fc0d41a14c3f9174c121d0b6",
+      "owner_intervention_id": null,
+      "public_key": "m86-sbs-signage-and-markings-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m86-sbs",
+        "treatment_family_key": "signage-and-markings",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:a51f685c477c7bbaa9d110e5",
+      "key_kind": "placement",
+      "subject_id": "placement:a14ec5d2425e3b90229ed4b0",
+      "owner_intervention_id": null,
+      "public_key": "bx5-automated-bus-lane-enforcement-route-wide-route-bx5-addendum-update",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx5",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:a7a8c3d5f7d8b9178f476460",
+      "key_kind": "placement",
+      "subject_id": "placement:d1a03ea585bd717d55f54ffb",
+      "owner_intervention_id": null,
+      "public_key": "bm2-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-summer-2024",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bm2",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:aa2cf2b1fd77305105faa11a",
+      "key_kind": "placement",
+      "subject_id": "placement:6e9132b2f3cdcd963a768c9b",
+      "owner_intervention_id": null,
+      "public_key": "b67-bus-lane-bounded-segment-corridor-flatbush-phase1-livingston-state",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b67",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "bounded_segment"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:aa6a1fcc624b004097e779bf",
+      "key_kind": "placement",
+      "subject_id": "placement:63831dd6c60468c1e354642e",
+      "owner_intervention_id": null,
+      "public_key": "m34-sbs-fare-collection-route-wide-route-m34-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m34-sbs",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:aad92a209889551f805e11b6",
+      "key_kind": "placement",
+      "subject_id": "placement:62da5d67ce148151364a44e0",
+      "owner_intervention_id": null,
+      "public_key": "b46-bus-lane-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b46",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:acf7868dc2d8a5b6f7d4eab7",
+      "key_kind": "placement",
+      "subject_id": "placement:37ed56adce7387a066f4472a",
+      "owner_intervention_id": null,
+      "public_key": "m60-sbs-bus-priority-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m60-sbs",
+        "treatment_family_key": "bus-priority",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:af3bf0da2df1dacdf40ca9bd",
+      "key_kind": "placement",
+      "subject_id": "placement:1afcc76bcaf42770df2024b5",
+      "owner_intervention_id": null,
+      "public_key": "m42-automated-bus-lane-enforcement-route-wide-route-m42-ace",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m42",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:af6db870ae1ecfd1d6419836",
+      "key_kind": "placement",
+      "subject_id": "placement:01b228bfb739cbd039cd2bbd",
+      "owner_intervention_id": null,
+      "public_key": "qm65-service-pattern-service-pattern-treatment-qm65-laurelton-downtown-connection-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "qm65",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:afee5bcb86f26c4d7db21522",
+      "key_kind": "placement",
+      "subject_id": "placement:52af0858e5761b2f760e2eb6",
+      "owner_intervention_id": null,
+      "public_key": "qm15-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-spring-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "qm15",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:b15e423dd02786a002745157",
+      "key_kind": "placement",
+      "subject_id": "placement:3fd41277437e7bb6939c82d5",
+      "owner_intervention_id": null,
+      "public_key": "q115-service-pattern-service-pattern-treatment-q115-all-day-frequent-service-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q115",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:b24d71f51db3df3799b063bf",
+      "key_kind": "placement",
+      "subject_id": "placement:806fdabad2533dc42153ba4e",
+      "owner_intervention_id": null,
+      "public_key": "q98-service-pattern-service-pattern-treatment-q98-flushing-ridgewood-connection-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q98",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:b3cd3a956d06a0d4dad0d63e",
+      "key_kind": "placement",
+      "subject_id": "placement:6cb427f4bec596ba5eb03d46",
+      "owner_intervention_id": null,
+      "public_key": "m86-sbs-fare-collection-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m86-sbs",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:b538bd641362e421a0b4d52a",
+      "key_kind": "placement",
+      "subject_id": "placement:51feaff2a1b9dbd5b582fd23",
+      "owner_intervention_id": null,
+      "public_key": "b60-automated-bus-lane-enforcement-route-wide-route-b60",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b60",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:b7a7862d483b84a7a75fd299",
+      "key_kind": "placement",
+      "subject_id": "placement:5d27cc9cb2af14199b4782fc",
+      "owner_intervention_id": null,
+      "public_key": "x27-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-spring-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "x27",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:ba6cd0bb894437434ccacc48",
+      "key_kind": "placement",
+      "subject_id": "placement:d5fd1cd63e841dd4a72ba818",
+      "owner_intervention_id": null,
+      "public_key": "q82-service-pattern-service-pattern-treatment-q82-belmont-jamaica-connection-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q82",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:baba2f17deac31babfa507ec",
+      "key_kind": "placement",
+      "subject_id": "placement:f9ba1a55024fc0a0746de126",
+      "owner_intervention_id": null,
+      "public_key": "bx7-automated-bus-lane-enforcement-route-wide-route-bx7-ace",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx7",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:c2085f368507e24bfc471b16",
+      "key_kind": "placement",
+      "subject_id": "placement:976794b48f01f4da796108ca",
+      "owner_intervention_id": null,
+      "public_key": "bx36-automated-bus-lane-enforcement-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx36",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:c4a8ff412bd6baec0840e13d",
+      "key_kind": "placement",
+      "subject_id": "placement:b33f88575e52563e4acafd92",
+      "owner_intervention_id": null,
+      "public_key": "m57-automated-bus-lane-enforcement-route-wide-route-m57-nyct-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m57",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:c5cf7712833039b36ebb60e5",
+      "key_kind": "placement",
+      "subject_id": "placement:4c04af3da2c074c2ace4774b",
+      "owner_intervention_id": null,
+      "public_key": "q90-service-pattern-service-pattern-treatment-q90-q48-laguardia-replacement-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q90",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:c76875187dc63ab9f999c885",
+      "key_kind": "placement",
+      "subject_id": "placement:0236710f6babd937f6ad02a9",
+      "owner_intervention_id": null,
+      "public_key": "q86-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q86",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:c7ddf212fd35449a311284ce",
+      "key_kind": "placement",
+      "subject_id": "placement:16b0e39258985b739b91c8d8",
+      "owner_intervention_id": null,
+      "public_key": "qm8-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "qm8",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:c9d7c2b908f3a3089b67cd2f",
+      "key_kind": "placement",
+      "subject_id": "placement:125b6285959b1f961d279cbd",
+      "owner_intervention_id": null,
+      "public_key": "bx12-sbs-bus-lane-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx12-sbs",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:ce13dbbf5d0572c5c9574d8c",
+      "key_kind": "placement",
+      "subject_id": "placement:4b058d8df18ea3ebb876311c",
+      "owner_intervention_id": null,
+      "public_key": "q82-service-pattern-service-pattern-treatment-q82-q110-hempstead-replacement-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q82",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:d286fb00599a8c154ee87df1",
+      "key_kind": "placement",
+      "subject_id": "placement:712aa446c27e7c5922bef458",
+      "owner_intervention_id": null,
+      "public_key": "q82-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q82",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:d64e46f7e47bdb8062db2472",
+      "key_kind": "placement",
+      "subject_id": "placement:175204268abf24c4504622cb",
+      "owner_intervention_id": null,
+      "public_key": "bx41-sbs-fare-collection-route-wide-route-webster-ave-sbs",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bx41-sbs",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:dfc74ffda91f6918226d3228",
+      "key_kind": "placement",
+      "subject_id": "placement:a15c59d3894155fd4daf23ff",
+      "owner_intervention_id": null,
+      "public_key": "q20-service-pattern-service-pattern-treatment-q20-college-point-jamaica-connection-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q20",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:e0b248e3270058e73d2d0287",
+      "key_kind": "placement",
+      "subject_id": "placement:d72be3c73faf5ca1b7536a6e",
+      "owner_intervention_id": null,
+      "public_key": "q36-service-pattern-service-pattern-treatment-q36-weekend-full-route-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q36",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:e1719028d6a9d3dae4407a29",
+      "key_kind": "placement",
+      "subject_id": "placement:7b15e3c2fa849626bb0699c0",
+      "owner_intervention_id": null,
+      "public_key": "b46-bus-lane-bounded-segment-corridor-utica-ave-st-johns-pl-church-ave-2013",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "b46",
+        "treatment_family_key": "bus-lane",
+        "scope_kind": "bounded_segment"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:e1781cbabc2021dacb784e1e",
+      "key_kind": "placement",
+      "subject_id": "placement:d4cfc01ccc7af9e03a368f84",
+      "owner_intervention_id": null,
+      "public_key": "sim24-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-spring-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "sim24",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:e72f88d02107f02864d8eef2",
+      "key_kind": "placement",
+      "subject_id": "placement:d21ef57e9ebbce096ea7b44d",
+      "owner_intervention_id": null,
+      "public_key": "bm2-service-pattern-service-pattern-treatment-weekday-express-bus-trip-additions-spring-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "bm2",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:ea48be4f273ec0e7b7334d8c",
+      "key_kind": "placement",
+      "subject_id": "placement:30d3711a4e6d64867e120462",
+      "owner_intervention_id": null,
+      "public_key": "m2-automated-bus-lane-enforcement-route-wide-route-m2-ace",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "m2",
+        "treatment_family_key": "automated-bus-lane-enforcement",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:eb075f43661159c7937cfaea",
+      "key_kind": "placement",
+      "subject_id": "placement:43e474ce1e38c07f6c81d7a5",
+      "owner_intervention_id": null,
+      "public_key": "q61-service-pattern-service-pattern-treatment-q61-q34-linden-hill-replacement-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q61",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:f24cdf261bf66f76f4cac967",
+      "key_kind": "placement",
+      "subject_id": "placement:47e864a3fdcfd214cae0029d",
+      "owner_intervention_id": null,
+      "public_key": "q45-service-pattern-service-pattern-treatment-q45-direct-connection-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q45",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:f400c3a11e3e69fda7959336",
+      "key_kind": "placement",
+      "subject_id": "placement:a8cb54ae8dc66cb21504a061",
+      "owner_intervention_id": null,
+      "public_key": "s96-fare-collection-route-wide-route-s96",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "s96",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:f55dae37d2429d04072f2cb7",
+      "key_kind": "placement",
+      "subject_id": "placement:37ab54e0c4e2e84daeb6caa4",
+      "owner_intervention_id": null,
+      "public_key": "q4-fare-collection-route-wide-route-q4-lcl-ltd",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q4",
+        "treatment_family_key": "fare-collection",
+        "scope_kind": "route_wide"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:f616a6607f9b376facebba44",
+      "key_kind": "placement",
+      "subject_id": "placement:7ac1ade7a13c692c24bdff8e",
+      "owner_intervention_id": null,
+      "public_key": "q87-service-pattern-service-pattern-treatment-q87-q5-green-acres-replacement-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q87",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:f699025c247cbb6b0b00db5b",
+      "key_kind": "placement",
+      "subject_id": "placement:b0102544721db96c2f6486a5",
+      "owner_intervention_id": null,
+      "public_key": "q82-service-pattern-service-pattern-treatment-q82-q36-212-replacement-2025",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q82",
+        "treatment_family_key": "service-pattern",
+        "scope_kind": "service_pattern"
+      }
+    },
+    {
+      "schema_version": 1,
+      "operation": "establish_public_key",
+      "operation_id": "public-key-op:fae4f41122b583bbfeb04c68",
+      "key_kind": "placement",
+      "subject_id": "placement:564f8214d0eba852141bb504",
+      "owner_intervention_id": null,
+      "public_key": "q87-bus-stop-or-boarding-unknown",
+      "establishment_method": "lossless_migration",
+      "decision_id": null,
+      "proposal_basis": {
+        "route_key": "q87",
+        "treatment_family_key": "bus-stop-or-boarding",
+        "scope_kind": "unknown"
+      }
+    }
+  ],
+  "requires_review": [],
+  "receipt_id": "public-key-migration:4350210883b93a6d5d2185883cfe15489aaedbeebd1c4f1e504df200ee0daf2e"
+}
