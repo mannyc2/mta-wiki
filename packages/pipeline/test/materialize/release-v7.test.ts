@@ -110,5 +110,20 @@ describe("manifest-v7 semantic envelope", () => {
     const reordered = structuredClone(receipt);
     reordered.semantic_inputs.reverse();
     expect(() => parseReleaseBuildReceipt(reordered)).toThrow("duplicate or unsorted input path");
+    const punctuationOrdered = buildReleaseReceipt({
+      ...base,
+      semanticInputs: [
+        ...base.semanticInputs,
+        { path: "data/current_intervention_footprint_reconciliation.jsonl", bytes: 1, sha256: hash, tracked: true },
+        { path: "data/current_intervention_footprint.jsonl", bytes: 1, sha256: hash, tracked: true },
+      ],
+    });
+    expect(punctuationOrdered.semantic_inputs.filter((entry) =>
+      entry.path.startsWith("data/current_intervention_footprint")
+    ).map((entry) => entry.path)).toEqual([
+      "data/current_intervention_footprint.jsonl",
+      "data/current_intervention_footprint_reconciliation.jsonl",
+    ]);
+    expect(parseReleaseBuildReceipt(punctuationOrdered)).toEqual(punctuationOrdered);
   });
 });

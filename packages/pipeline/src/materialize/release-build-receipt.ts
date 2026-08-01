@@ -101,8 +101,10 @@ export function semanticInputsCoverProductionReceipts(inputs: readonly ReleaseBu
   return requiredProductionReceiptPaths.every((path) => tracked.has(path));
 }
 
+const compareReceiptPath = (left: string, right: string): number => left < right ? -1 : left > right ? 1 : 0;
+
 export function collectReleaseBuildInputs(root: string, paths: readonly string[]): ReleaseBuildInput[] {
-  return [...new Set(paths)].sort().map((path) => {
+  return [...new Set(paths)].sort(compareReceiptPath).map((path) => {
     const absolute = resolve(root, path);
     const stat = statSync(absolute);
     if (!stat.isFile()) throw new Error(`semantic input is not a regular file: ${path}`);
@@ -117,7 +119,7 @@ function digests(inputs: ReleaseBuildInput[], codeConfigPaths: string[]): {
 } {
   const semanticInputDigest = sha256(inputs.map((entry) =>
     `${entry.path}\0${entry.bytes}\0${entry.sha256}\0${entry.tracked}`).join("\n"));
-  const codeConfigInputDigest = sha256([...codeConfigPaths].sort().map((path) => {
+  const codeConfigInputDigest = sha256([...codeConfigPaths].sort(compareReceiptPath).map((path) => {
     const entry = inputs.find((candidate) => candidate.path === path);
     if (!entry) throw new Error(`code/config input is not receipted: ${path}`);
     return `${path}\0${entry.bytes}\0${entry.sha256}`;
@@ -136,7 +138,7 @@ export function buildReleaseReceipt(input: {
   outputResources: Record<string, ReleaseManifestFile>;
   productionGateEvidence: ProductionGateEvidence;
 }): ProductionReleaseBuildReceipt {
-  const semanticInputs = [...input.semanticInputs].sort((a, b) => a.path.localeCompare(b.path));
+  const semanticInputs = [...input.semanticInputs].sort((a, b) => compareReceiptPath(a.path, b.path));
   const verificationReasons: string[] = [];
   if (input.trackedDirty) verificationReasons.push("tracked_worktree_dirty");
   if (semanticInputs.some((entry) => !entry.tracked)) verificationReasons.push("untracked_semantic_input");
@@ -160,7 +162,7 @@ export function buildReleaseReceipt(input: {
     export_options: { profile: input.profile, as_of_date: input.asOfDate, publish_check: input.publishCheck },
     semantic_inputs: semanticInputs,
     semantic_input_digest: semanticInputDigest,
-    code_config_paths: [...input.codeConfigPaths].sort(),
+    code_config_paths: [...input.codeConfigPaths].sort(compareReceiptPath),
     code_config_input_digest: codeConfigInputDigest,
     output_resources: Object.fromEntries(Object.entries(input.outputResources).sort(([a], [b]) => a.localeCompare(b))),
     production_gate_evidence: input.productionGateEvidence,
@@ -249,10 +251,10 @@ export function parseReleaseBuildReceipt(value: unknown): ReleaseBuildReceipt {
   }
   const semanticPaths = receipt.semantic_inputs.map((entry) => entry.path);
   if (new Set(semanticPaths).size !== receipt.semantic_inputs.length ||
-      JSON.stringify([...semanticPaths].sort()) !== JSON.stringify(semanticPaths) ||
+      JSON.stringify([...semanticPaths].sort(compareReceiptPath)) !== JSON.stringify(semanticPaths) ||
       receipt.code_config_paths.some((path) => typeof path !== "string") ||
       new Set(receipt.code_config_paths).size !== receipt.code_config_paths.length ||
-      JSON.stringify([...receipt.code_config_paths].sort()) !== JSON.stringify(receipt.code_config_paths)) {
+      JSON.stringify([...receipt.code_config_paths].sort(compareReceiptPath)) !== JSON.stringify(receipt.code_config_paths)) {
     throw new Error("build receipt: duplicate or unsorted input path");
   }
   if (!receipt.output_resources || typeof receipt.output_resources !== "object" || Array.isArray(receipt.output_resources)) {
