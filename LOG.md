@@ -4,6 +4,25 @@ This file is the compact durable history for the public repository. Keep it chan
 record release milestones, public data-contract changes, owner decisions that affect publication,
 and active caveats. Do not use it as a transcript, run log, or plan archive.
 
+## 2026-08-02
+
+### Completed the Resolved Transit Knowledge Pack production program
+
+- Closed the final downstream boundary after Tracker Plans 098 and 106
+  completed on protected main. Production is pinned to serving generation 4
+  Candidate B `a8a3747f…`, which contains exact Plan 106 candidate
+  `b647f0f1…` with 222 episodes, 188 route artifacts, and 268 memberships.
+- Protected activation run `30725967026` proved Candidate A no-leakage,
+  Candidate B activation, pointer rollback, protected-fingerprint stability,
+  and final B reactivation. Completion deployment run `30726275382` then
+  passed zero-traffic staging, exact-version proof, promotion, ordinary
+  traffic, D1 audit, and public smoke without invoking rollback.
+- Recorded append-only completion receipt
+  `resolved-pack-v1-production-program-completion:d938824d9f1dae425aba6c8b48eaa965fc6f7617c2e304615cb723a76bc9a54f`.
+  It retains the original blocked publication receipt as historical evidence,
+  binds the final Tracker pin/deployment, and closes Plan 057 and the overall
+  completion program. Provider usage and cost remained zero.
+
 ## 2026-08-01
 
 ### Published the final production Resolved Transit Knowledge Pack successor
