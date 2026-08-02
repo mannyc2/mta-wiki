@@ -25,4 +25,9 @@ it("threads the owned clean-clone database through every post-rebuild gate", () 
 	expect(script).toContain(
 		'join(ownedRoot, "reference-adapter.json"),',
 	);
+	const workflow = readFileSync(
+		join(repoRoot, ".github/workflows/ci.yml"),
+		"utf8",
+	);
+	expect(workflow).toContain("fetch-depth: 0");
 });
