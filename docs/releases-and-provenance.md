@@ -10,6 +10,10 @@ the explicit as-of date `2026-07-27`.
 - Release pointer: `data/exports/releases/LATEST`
 - Release directory: `data/exports/releases/resolved-pack-v1-production/`
 - Public repository: `https://github.com/mannyc2/mta-wiki`
+- Program completion receipt:
+  `data/quality/releases/resolved-pack-v1-production-program-completion-receipt.json`
+- Downstream Tracker: serving generation 4 Candidate B, protected deployment
+  verified 2026-08-02
 
 The release manifest records per-kind counts, hashes, and pointers to companion release artifacts.
 
@@ -45,6 +49,11 @@ contract. `LATEST`, tags, GitHub Releases, and downstream pins are separate
 promotion operations; candidate construction changes none of them. A
 production handoff binds both independently verified roots before any of those
 operations can proceed.
+
+The final program-completion receipt is append-only. It does not rewrite the
+earlier publication receipt that correctly recorded the downstream STOP at the
+time of publication; it binds that receipt to the later Tracker Plan 098/106
+pin, rollback proof, and protected production deployment.
 
 ### Treatment semantic companions
 
